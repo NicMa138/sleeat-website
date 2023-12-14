@@ -19,20 +19,41 @@ main {
 
 header{
     display: flex;
-    align-items: top;
-    background-color: #ffffff81;
+    align-items: center;
+    background-color: #e2dede81;
 
 }
 .logo{
-    flex: 1;
-    margin: 20px 20px 0px 20px;
+    
+    margin: 20px 10px 20px 20px;
+ 
+    
 }
 
 .menu{
+  display: flex;
+  justify-content: space-around;
+  flex: 1;
     margin: 10px 20px 5px 5px; 
+  
+    align-items: center;
 }
 .login{
     margin: 10px 20px 0px 5px;
+}
+
+.menuebutton{
+  background-color: #d6d0d081;
+  padding: 15px;
+  border-radius: 7px;
+  
+
+}
+/*Alle im Menu*/
+.menu a{
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 /*******************************************************/
@@ -63,6 +84,6 @@ footer {
     }
 
 a {
-      color: white;
+      color: rgb(255, 255, 255);
       text-decoration: none;
     }
