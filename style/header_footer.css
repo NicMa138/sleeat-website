@@ -20,6 +20,7 @@ main {
 header{
     display: flex;
     align-items: top;
+    background-color: #ffffff81;
 
 }
 .logo{
@@ -45,10 +46,8 @@ footer {
       display: flex;
       justify-content: space-between;
     text-align: center;
- 
 
     }
-
 
 .column {
       flex: 1;
