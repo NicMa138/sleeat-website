@@ -4,32 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/style/angebotsseite.css">
+    <!-- Einfach noch den Link zum CSS einfügen-->
+    <link rel="stylesheet" href="style/header_footer.css">
+
 </head>
-<style>
-    <body{
-    font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            display: flex;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        .left-column {
-            flex: 1;
-            margin-right: 20px;
-        }
-
-        .right-column {
-            flex: 1;
-        }
-
-</style>
 <body>
-    </style>
-    </head>
+     <!-- Header einkopiert 14.12.2023 -->
+    <header>
+        <div class="logo">
+            <a href="header_footer.html">
+                <img src="image/header_footer_logo.png" alt="Logo IMP News"width="247px" height="80px">
+            </a>
+        </div>
+        <!-- bei # wird dann eine Verlinkung eingetragen zu der jeweiligen Seite / Beispiel bei Kontakt- Link zu google -->
+        <div class="menu">
+          <a href="#" class="menuebutton">Ich möchte hosten</a>
+          <a href="#" class="menuebutton">Ich möchte reisen</a>
+          <a href="#" > Über uns</a>
+          <a href="https://google.com" > Kontakt</a>
+    
+        
+        <!--<a href="menu.html">
+            <img src="image/header_footer_menu.png" width="40px" height="40px">
+        </a>-->
+        </div>
+        <div class="login">
+          <a href="login.html">
+            <img src="image/header_footer_login.png" width="55px" height="55px">
+          </a>
+        </div>
+        
+    </header>
+<!-- Start Mittelteil-->
+    <main>    
+    <div class="container">
+        <div class="left-column">
+            <!-- Hier das Video einfügen -->
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/DEIN_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="right-column">
+            <!-- Hier den Text einfügen -->
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed non bibendum tellus. Nunc vel neque eu urna tincidunt congue. Quisque auctor velit nec mauris fermentum, in interdum justo cursus. Duis euismod sem ac risus posuere, vel consequat sem congue. Integer vel velit non justo ullamcorper vestibulum.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="left-column">
+            <!-- Hier das Video einfügen -->
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/DEIN_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="right-column">
+            <!-- Hier den Text einfügen -->
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed non bibendum tellus. Nunc vel neque eu urna tincidunt congue. Quisque auctor velit nec mauris fermentum, in interdum justo cursus. Duis euismod sem ac risus posuere, vel consequat sem congue. Integer vel velit non justo ullamcorper vestibulum.</p>
+        </div>
+    </div>
+
+    </main>
+   
+
+<!-- Footer einkopiert 14.12.2023 -->
+    <footer>
+        <div class="column left">
+          <p>Sleeat Mansanserstrasse 55, 7000 Chur</p>
+        </div>
+    
+        <div class="column">
+          <p><a href="#">AGB</a> | <a href="#">Datenschutz</a>| <a href="#">Über uns</a></p>| <a href="#">Kontakt </a>|</div>
+        </div>
+    
+        <div class="column right">
+          <p>Follow us: <a href="#">Instagram</a> | <a href="#">Facebook</a></p>
+        </div>
+    </footer>
 </body>
 </html>
