@@ -26,8 +26,6 @@ header{
 .logo{
     
     margin: 20px 10px 20px 20px;
- 
-    
 }
 
 .menu{
@@ -46,9 +44,8 @@ header{
   background-color: #d6d0d081;
   padding: 15px;
   border-radius: 7px;
-  
-
 }
+
 /*Alle im Menu*/
 .menu a{
   color: black;
