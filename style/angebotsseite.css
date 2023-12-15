@@ -5,10 +5,47 @@ body {
 }
 
 .container {
-    display: flex;
+
+   font-size: 200%;
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+    margin: min(10%, 10px) auto;
+    padding: 30px;
+    text-align: center;
+    line-height: 2;
+}
+
+.form-container {
+    font-family: 'Railway', Arial, sans-serif;
+    font-size: 120%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: min(10%, 10px) auto;
+    padding: 35px;
+    width: 90%;
+    max-width: 1;
+    border-radius: 10px;
+    box-shadow: 0 50 50px rgba(0,0,0,0.1);
+    text-align: center;
+    line-height: 4;
+    background-color:rgba(49, 80, 60, 0.41);
+}
+
+
+.buttonweiter {
+    font-size: 10px; /* Ändere die Schriftgröße nach Bedarf */
+    padding: 10px 20px; /* Ändere die Polsterung nach Bedarf */
+}
+
+.maincontainer {
+    background-color: blueviolet;
+}
+
+menu {
+    display: flex ;
+    flex-direction: column;
+    flex: 1;
+    margin-right: 20px;
 }
 
 .left-column {
@@ -18,7 +55,8 @@ body {
 
 .right-column {
     flex: 1;
-
 }
+
+
 
 
