@@ -1,13 +1,12 @@
-.ueber-uns,
-.ueber-uns * {
-  box-sizing: border-box;
-}
+
+
 .ueber-uns {
   background: #ffffff;
   height: 3239px;
   position: relative;
   overflow: hidden;
 }
+
 .hintergrundbild {
   height: 2863px;
   position: absolute;
@@ -16,6 +15,7 @@
   box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   opacity: 40%;
 }
+
 .ellipse-7 {
   background: rgba(217, 217, 217, 0.7);
   border-radius: 50%;
@@ -25,6 +25,7 @@
   left: 632px;
   top: 1273px;
 }
+
 .ellipse-4 {
   background: rgba(217, 217, 217, 0.7);
   border-radius: 50%;
@@ -34,6 +35,7 @@
   left: -161px;
   top: 439px;
 }
+
 .ellipse-9 {
   background: rgba(26, 184, 166, 0.25);
   border-radius: 50%;
@@ -43,6 +45,7 @@
   left: 98px;
   top: 1040px;
 }
+
 .ellipse-8 {
   background: rgba(26, 184, 166, 0.25);
   border-radius: 50%;
@@ -52,13 +55,15 @@
   left: -444px;
   top: 2124px;
 }
+
 .footer {
-  width: 1440px;
+  width: 100%;
   height: 188px;
   position: absolute;
   left: 0px;
   top: 3051px;
 }
+
 .rectangle-2 {
   background: rgba(164, 166, 152, 0.5);
   position: absolute;
@@ -69,15 +74,16 @@
   top: 0%;
   height: 100%;
 }
+
 .logo {
   position: absolute;
   right: 86.32%;
   left: 3.26%;
   width: 10.42%;
-  bottom: 37.95%;
-  top: 36.7%;
-  height: 25.35%;
+  bottom: calc(37.95% + 10px);
+  top: calc(36.7% - 10px);
 }
+
 .impressum-datenschutz-ueber-uns {
   color: #000000;
   text-align: center;
@@ -93,6 +99,7 @@
   top: 18.09%;
   height: 67.55%;
 }
+
 .facebook {
   height: auto;
   position: absolute;
@@ -104,6 +111,7 @@
   height: 29.79%;
   overflow: visible;
 }
+
 .instagram {
   height: auto;
   position: absolute;
@@ -115,6 +123,7 @@
   height: 30.32%;
   overflow: visible;
 }
+
 .vanessa {
   color: #000000;
   text-align: left;
@@ -124,6 +133,7 @@
   width: 369px;
   height: 240px;
 }
+
 .vanessa-span {
   color: #000000;
   font-family: "Raleway-SemiBold", sans-serif;
@@ -131,6 +141,7 @@
   line-height: 40px;
   font-weight: 600;
 }
+
 .vanessa-span2 {
   color: #000000;
   font-family: "Raleway-Medium", sans-serif;
@@ -138,6 +149,7 @@
   line-height: 25px;
   font-weight: 500;
 }
+
 .moritz {
   color: #000000;
   text-align: left;
@@ -147,6 +159,7 @@
   width: 369px;
   height: 158px;
 }
+
 .moritz-span {
   color: #000000;
   font-family: "Raleway-SemiBold", sans-serif;
@@ -154,6 +167,7 @@
   line-height: 40px;
   font-weight: 600;
 }
+
 .moritz-span2 {
   color: #000000;
   font-family: "Raleway-Medium", sans-serif;
@@ -161,6 +175,7 @@
   line-height: 25px;
   font-weight: 500;
 }
+
 .nicole {
   color: #000000;
   text-align: right;
@@ -170,6 +185,7 @@
   width: 368px;
   height: 184px;
 }
+
 .nicole-span {
   color: #000000;
   font-family: "Raleway-SemiBold", sans-serif;
@@ -177,6 +193,7 @@
   line-height: 40px;
   font-weight: 600;
 }
+
 .nicole-span2 {
   color: #000000;
   font-family: "Raleway-Medium", sans-serif;
@@ -184,6 +201,7 @@
   line-height: 25px;
   font-weight: 500;
 }
+
 .koepfe {
   color: #1ab8a6;
   text-align: left;
@@ -197,6 +215,7 @@
   width: 1140px;
   height: 194px;
 }
+
 .carolina {
   color: #000000;
   text-align: right;
@@ -206,6 +225,7 @@
   width: 272px;
   height: 195px;
 }
+
 .carolina-span {
   color: #000000;
   font-family: "Raleway-SemiBold", sans-serif;
@@ -213,6 +233,7 @@
   line-height: 40px;
   font-weight: 600;
 }
+
 .carolina-span2 {
   color: #000000;
   font-family: "Raleway-Medium", sans-serif;
@@ -220,6 +241,7 @@
   line-height: 25px;
   font-weight: 500;
 }
+
 .simon {
   color: #000000;
   text-align: right;
@@ -229,6 +251,7 @@
   width: 373px;
   height: 189px;
 }
+
 .simon-span {
   color: #000000;
   font-family: "Raleway-SemiBold", sans-serif;
@@ -236,6 +259,7 @@
   line-height: 40px;
   font-weight: 600;
 }
+
 .simon-span2 {
   color: #000000;
   font-family: "Raleway-Medium", sans-serif;
@@ -243,8 +267,9 @@
   line-height: 25px;
   font-weight: 500;
 }
+
 .gruendungsgeschichte {
-text-align: left;
+  text-align: left;
   position: absolute;
   left: calc(50% - 562px);
   top: calc(50% - -657.5px);
@@ -254,6 +279,7 @@ text-align: left;
   align-items: center;
   justify-content: flex-start;
 }
+
 .gruendungsgeschichte-span {
   color: #1ab8a6;
   font-family: "Raleway-Bold", sans-serif;
@@ -261,6 +287,7 @@ text-align: left;
   line-height: 40px;
   font-weight: 700;
 }
+
 .gruendungsgeschichte-span2 {
   color: #000000;
   font-family: "Raleway-Medium", sans-serif;
@@ -268,23 +295,26 @@ text-align: left;
   line-height: 40px;
   font-weight: 500;
 }
+
 .vanessa-portrait {
-    width: 273px;
-    height: 343px;
-    position: absolute;
-    left: 150px;
-    top: 498px;
+  width: 273px;
+  height: 343px;
+  position: absolute;
+  left: 150px;
+  top: 498px;
 }
+
 .bild_vanessa {
-    position: absolute;
-    right: 0%;
-    left: 0%;
-    width: 100%;
-    bottom: 0%;
-    top: 0%;
-    height: 100%;
-    object-fit: cover;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  width: 100%;
+  bottom: 0%;
+  top: 0%;
+  height: 100%;
+  object-fit: cover;
 }
+
 .moritz-portrait {
   width: 273px;
   height: 343px;
@@ -292,6 +322,7 @@ text-align: left;
   left: 343px;
   top: 1101px;
 }
+
 .bild_moritz {
   position: absolute;
   right: 0%;
@@ -302,6 +333,7 @@ text-align: left;
   height: 100%;
   object-fit: cover;
 }
+
 .nicole-portrait {
   width: 273px;
   height: 343px;
@@ -309,6 +341,7 @@ text-align: left;
   left: 728px;
   top: 1465px;
 }
+
 .bild_nicole {
   position: absolute;
   right: 0%;
@@ -319,143 +352,85 @@ text-align: left;
   height: 100%;
   object-fit: cover;
 }
+
 .carolina-portrait {
-    width: 273px;
-    height: 343px;
-    position: absolute;
-    left: 1017px;
-    top: 1067px;
-  }
+  width: 273px;
+  height: 343px;
+  position: absolute;
+  left: 1017px;
+  top: 1067px;
+}
+
 .bild_carolina {
-    position: absolute;
-    right: 0%;
-    left: 0%;
-    width: 100%;
-    bottom: 0%;
-    top: 0%;
-    height: 100%;
-    object-fit: cover;
-  }
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  width: 100%;
+  bottom: 0%;
+  top: 0%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .simon-portrait {
-    width: 273px;
-    height: 343px;
-    position: absolute;
-    left: 635px;
-    top: 549px;
-  }
+  width: 273px;
+  height: 343px;
+  position: absolute;
+  left: 635px;
+  top: 549px;
+}
+
 .bild_simon {
-    position: absolute;
-    right: 0%;
-    left: 0%;
-    width: 100%;
-    bottom: 0%;
-    top: 0%;
-    height: 100%;
-    object-fit: cover;
-  }  
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  width: 100%;
+  bottom: 0%;
+  top: 0%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .header-ueber-uns {
-  width: 1440px;
+  width: 100%;
   height: 188px;
   position: absolute;
   left: 0px;
   top: 0px;
 }
-.header-kontaktseite {
-  position: absolute;
-  right: 0%;
-  left: 0%;
-  width: 100%;
-  bottom: 0%;
-  top: 0%;
-  height: 100%;
-}
-.header-kontaktseite2 {
-  background: rgba(77, 89, 88, 0.2);
-  position: absolute;
-  right: 0%;
-  left: 0%;
-  width: 100%;
-  bottom: 0%;
-  top: 0%;
-  height: 100%;
-}
+
 .hintergrund-header {
   background: rgba(164, 166, 152, 0.8);
-  width: 1440px;
+  width: 100%;
   height: 188px;
   position: absolute;
   left: 0px;
   top: 0px;
 }
-.logo2 {
-  position: absolute;
-  right: 78.54%;
-  left: 2.01%;
-  width: 19.44%;
-  bottom: 29.28%;
-  top: 23.4%;
-  height: 47.32%;
-}
+
 .button {
   background: #afb3b2;
   border-radius: 40px;
   border-style: solid;
   border-color: #000000;
   border-width: 2px;
-  padding: 5px 60px 5px 60px;
+  padding: 5px 5px 5px 5px;
   display: flex;
   flex-direction: row;
   gap: 10px;
   align-items: center;
   justify-content: center;
-  width: 308px;
+  width: 280px;
   height: 65px;
   position: absolute;
-  left: 366px;
+  left: 20%;
   top: 67px;
   box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   overflow: hidden;
 }
-.ellipse-3 {
-  background: #99cec8;
-  border-radius: 50%;
-  flex-shrink: 0;
-  width: 87px;
-  height: 79px;
-  position: absolute;
-  left: -25px;
-  top: -79px;
-}
-.m-chtest-du-hosten {
-  color: #000000;
-  text-align: center;
-  font-family: "Raleway-Bold", sans-serif;
-  font-size: 22px;
-  line-height: 60px;
-  font-weight: 700;
-  position: absolute;
-  left: 28px;
-  top: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.ja-ich-m-chte-hosten {
-  color: #000000;
-  text-align: center;
-  font-family: "Raleway-Bold", sans-serif;
-  font-size: 22px;
-  line-height: 60px;
-  font-weight: 700;
-  position: absolute;
-  left: 16px;
-  top: -61px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.button2 {
-  background: #afb3b2;
+
+.button:hover {
+  background: rgba(26, 184, 166, 0.3);
   border-radius: 40px;
   border-style: solid;
   border-color: #000000;
@@ -466,49 +441,143 @@ text-align: left;
   gap: 10px;
   align-items: center;
   justify-content: center;
-  width: 308px;
+  width: 280px;
   height: 65px;
   position: absolute;
-  left: 710px;
+  left: 20%;
   top: 67px;
   box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   overflow: hidden;
 }
-.m-chtest-du-reisen {
+
+.button2 {
+  background: #afb3b2;
+  border-radius: 40px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 2px;
+  padding: 5px 5px 5px 5px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+  height: 65px;
+  position: relative;
+  left: 45%;
+  top: 67px;
+  box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+.button2:hover {
+  background: rgba(26, 184, 166, 0.3);
+  border-radius: 40px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 2px;
+  padding: 5px 60px 5px 60px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+  height: 65px;
+  position: absolute;
+  left: 45%;
+  top: 67px;
+  box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+.moechtest-du-reisen {
   color: #000000;
   text-align: center;
   font-family: "Raleway-Bold", sans-serif;
   font-size: 22px;
   line-height: 60px;
   font-weight: 700;
-  position: absolute;
-  left: 32px;
-  top: 5px;
+  position: center;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.ja-ich-m-chte-reisen {
+
+.ja-ich-moechte-reisen {
   color: #000000;
   text-align: center;
   font-family: "Raleway-Bold", sans-serif;
   font-size: 22px;
   line-height: 60px;
   font-weight: 700;
-  position: absolute;
-  left: 20px;
-  top: -61px;
+  position: center;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
+button .ja-ich-moechte-hosten {
+  display: none;
+}
+
+button:hover .moechtest-du-hosten {
+  display: none;
+}
+
+button:hover .ja-ich-moechte-hosten {
+  display: contents;
+}
+
+button .ja-ich-moechte-reisen {
+  display: none;
+}
+
+button:hover .moechtest-du-reisen {
+  display: none;
+}
+
+button:hover .ja-ich-moechte-reisen {
+  display: contents;
+}
+
+.moechtest-du-hosten {
+  color: #000000;
+  text-align: center;
+  font-family: "Raleway-Bold", sans-serif;
+  font-size: 22px;
+  line-height: 60px;
+  font-weight: 700;
+  position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ja-ich-moechte-hosten {
+  color: #000000;
+  text-align: center;
+  font-family: "Raleway-Bold", sans-serif;
+  font-size: 22px;
+  line-height: 60px;
+  font-weight: 700;
+  position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
 .button-ueber-uns {
   width: 153px;
   height: 54px;
   position: absolute;
-  left: 1037px;
+  left: 69%;
   top: 83px;
 }
+
 .button-ueber-uns2 {
   color: #000000;
   text-align: center;
@@ -524,13 +593,15 @@ text-align: left;
   top: 0%;
   height: 100%;
 }
+
 .button-kontakt {
   width: 153px;
   height: 54px;
   position: absolute;
-  left: 1170px;
+  left: 80%;
   top: 83px;
 }
+
 .button-kontakt2 {
   color: #000000;
   text-align: center;
@@ -546,13 +617,15 @@ text-align: left;
   top: 0%;
   height: 100%;
 }
+
 .button-login {
   width: 60px;
   height: 59.5px;
   position: absolute;
-  left: 1333px;
+  left: 93%;
   top: 72px;
 }
+
 .button-login2 {
   position: absolute;
   right: 0%;
@@ -562,6 +635,7 @@ text-align: left;
   top: 0%;
   height: 100%;
 }
+
 .ellipse-5 {
   background: rgba(26, 184, 166, 0.3);
   border-radius: 50%;
@@ -570,4 +644,16 @@ text-align: left;
   position: absolute;
   left: 649px;
   top: 682px;
+}
+
+@media screen and (max-width: 1200px) {
+  .header-ueber-uns {
+    width: 100%;
+    height: 188px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: green;
+  }
+  
 }
