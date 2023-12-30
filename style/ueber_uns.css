@@ -11,9 +11,19 @@
   height: 2863px;
   position: absolute;
   left: 0px;
-  top: 188px;
+  top: 0px;
   box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   opacity: 40%;
+}
+
+.ellipse-5 {
+  background: rgba(26, 184, 166, 0.3);
+  border-radius: 50%;
+  width: 771px;
+  height: 771px;
+  position: absolute;
+  left: 649px;
+  top: 682px;
 }
 
 .ellipse-7 {
@@ -211,7 +221,7 @@
   font-weight: 700;
   position: absolute;
   left: 150px;
-  top: 247px;
+  top: 150px;
   width: 1140px;
   height: 194px;
 }
@@ -391,22 +401,6 @@
   object-fit: cover;
 }
 
-.header-ueber-uns {
-  width: 100%;
-  height: 188px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-}
-
-.hintergrund-header {
-  background: rgba(164, 166, 152, 0.8);
-  width: 100%;
-  height: 188px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-}
 
 .button {
   background: #afb3b2;
@@ -636,24 +630,69 @@ button:hover .ja-ich-moechte-reisen {
   height: 100%;
 }
 
-.ellipse-5 {
-  background: rgba(26, 184, 166, 0.3);
-  border-radius: 50%;
-  width: 771px;
-  height: 771px;
-  position: absolute;
-  left: 649px;
-  top: 682px;
-}
-
-@media screen and (max-width: 1200px) {
-  .header-ueber-uns {
-    width: 100%;
-    height: 188px;
+@media screen and (max-width: 1320px) {
+  .koepfe {
+    color: #1ab8a6;
+    text-align: left;
+    font-family: "Raleway-Bold", sans-serif;
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 700;
     position: absolute;
-    left: 0px;
-    top: 0px;
-    background-color: green;
+    left: 11.5%;
+    top: 150px;
+    width: 80%;
+    height: 194px;
+  }
+
+  .ellipse-5 {
+    background: rgba(26, 184, 166, 0.3);
+    border-radius: 50%;
+    width: 771px;
+    height: 771px;
+    position: absolute;
+    left: 49.5%;
+    top: 682px;
   }
   
+  .ellipse-7 {
+    background: rgba(217, 217, 217, 0.7);
+    border-radius: 50%;
+    width: 849px;
+    height: 851px;
+    position: absolute;
+    left: 49.5%;
+    top: 1273px;
+  }
+  
+  .ellipse-4 {
+    background: rgba(217, 217, 217, 0.7);
+    border-radius: 50%;
+    width: 1004px;
+    height: 937px;
+    position: absolute;
+    left: -161px;
+    top: 439px;
+  }
+  
+  .ellipse-9 {
+    background: rgba(26, 184, 166, 0.25);
+    border-radius: 50%;
+    width: 700px;
+    height: 678px;
+    position: absolute;
+    left: 7%;
+    top: 1040px;
+  }
+  
+  .ellipse-8 {
+    background: rgba(26, 184, 166, 0.25);
+    border-radius: 50%;
+    width: 1884px;
+    height: 1794px;
+    position: absolute;
+    left: -444px;
+    top: 2124px;
+  }
+
 }
