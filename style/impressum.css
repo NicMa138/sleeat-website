@@ -1,0 +1,215 @@
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.hintergrundbild {
+    z-index: 1; /* Setzt den z-index des Hintergrundbildes auf 0 */
+}
+.container-ellipsen {
+    position: relative; /* z-index funktioniert nur auf positionierten Elementen */
+    z-index: 2; /* Setzt den z-index der Ellipsen auf 1 */
+}
+
+.ellipse-goben, .ellipse-gunten, .ellipse-boben, .ellipse-bmitte, .ellipse-bunten {
+    position: relative; /* z-index funktioniert nur auf positionierten Elementen */
+    z-index: 2; /* Setzt den z-index der Ellipsen auf 1 */
+}
+
+.container-impressum, .container-datenschutz .popup .datenschutz-content{
+    position: relative; /* z-index funktioniert nur auf positionierten Elementen */
+    z-index: 3; /* Setzt den z-index des Textes auf 2 */
+
+}
+
+.datenschutz-content{
+    position: relative; /* z-index funktioniert nur auf positionierten Elementen */
+    z-index: 4; /* Setzt den z-index des Textes auf 2 */
+}
+
+/*_________________________________HEADER VON IMPRESSUM_______________________________*/
+header{
+    display: flex;
+    align-items: center;
+    background-color: #e2dede81;
+
+}
+.logo{
+    
+    margin: 20px 10px 20px 20px;
+}
+
+.menu{
+  display: flex;
+  justify-content: space-around;
+  flex: 1;
+    margin: 10px 20px 5px 5px; 
+  
+    align-items: center;
+}
+.login{
+    margin: 10px 20px 0px 5px;
+}
+
+.menuebutton{
+  background-color: #d6d0d081;
+  padding: 15px;
+  border-radius: 7px;
+}
+
+/*Alle im Menu*/
+.menu a{
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/*_________________________________HINTERGRUND VON IMPRESSUM_______________________________*/
+.hintergrundbild {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    opacity: 40%;
+}
+
+.container-ellipsen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Set the width to the full width of the viewport */
+    height: 100%; /* Set the height to the full height of the viewport */
+}
+
+.ellipse-goben {
+    background: rgba(217, 217, 217, 0.7);
+    border-radius: 50%;
+    width: 1004px;
+    height: 937px;
+    position: absolute;
+    top: 339px;
+    left: -161px;    
+    opacity: 70%;
+  }
+  
+  .ellipse-gunten {
+    background: rgba(217, 217, 217, 0.7);
+    border-radius: 50%;
+    width: 900px;
+    height: 900px;
+    position: absolute;
+    top: 1573px;
+    right: -50px;
+    opacity: 70%;
+  }
+
+  .ellipse-boben {
+    background: rgba(26, 184, 166, 0.25);
+    border-radius: 50%;
+    width: 700px;
+    height: 678px;
+    position: absolute;
+    top: 518px;
+    right: 50px;
+    opacity: 50%;
+    }
+
+    .ellipse-bmitte {
+        background: rgba(26, 184, 166, 0.25);
+        border-radius: 50%;
+        width: 700px;
+        height: 678px;
+        position: absolute;
+        top: 1100px;
+        left: 300px;
+        opacity: 50%;
+     }
+
+
+.ellipse-bunten {
+        background: rgba(26, 184, 166, 0.25);
+        border-radius: 50%;
+        width: 1884px;
+        height: 1794px;
+        position: absolute;
+        left: -444px;
+        top: 2124px;
+        opacity: 50%;
+     } */
+
+
+
+     .container-impressum, .container-datenschutz {
+        width: 80%;
+        margin: auto;
+    }
+    
+    .impressum-content, .datenschutz-content {
+        padding: 20px;
+    }
+
+
+
+/*_________________________________TEXTINHALT VON IMPRESSUM_______________________________*/
+.impressum-content, .datenschutz-content{
+    padding: 20px;
+}
+
+.flex-firmagewissen {
+    display: flex; /* Set the parent element as a flex container */
+    align-items: flex-start;
+}
+
+.firma {
+    flex: 0 0 50%; /* Set the width of .firma to 50% */
+    margin: 10px 10px 10px 0px; /* Add margin around .firma */
+}
+
+.gewissenbildtext {
+    display: flex;
+    align-items: center;
+}
+.gewissentext {
+    flex: 1; /* Let .gewissen take up the remaining space */
+    margin: 10px; /* Add margin around .gewissen */
+}
+
+.gewissenbild {
+    width: 50px;
+    height: 55px;
+}
+
+
+
+/*_________________________________TEXTINHALT VON DATENSCHUTZ_______________________________*/
+
+
+/* Stile für Bildschirme mit einer Breite von bis zu 600px (Mobilegeräte)*/ 
+    @media (max-width: 600px) {
+        .container {
+            width: 100%;
+         
+        }
+
+        .datenschutz, .impressum-content {
+            padding: 10px;
+        }
+
+        .hintergrundbild {
+            width: auto;
+            height: 100vh;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            opacity: 40%;
+            background-size: cover; /* Stellt sicher, dass das Hintergrundbild den gesamten Container abdeckt */
+            background-position: center;
+        }
+        
+    }
+
