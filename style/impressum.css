@@ -67,15 +67,23 @@ header{
 }
 
 /*_________________________________HINTERGRUND VON IMPRESSUM_______________________________*/
+.ueber-uns {
+    background: #ffffff;
+    height: 3239px;
+    position: relative;
+    overflow: hidden;
+  }
+
 .hintergrundbild {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
     position: absolute;
     left: 0px;
     top: 0px;
     box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     opacity: 40%;
-}
+  }
 
 .container-ellipsen {
     position: absolute;
@@ -83,6 +91,7 @@ header{
     left: 0;
     width: 100%; /* Set the width to the full width of the viewport */
     height: 100%; /* Set the height to the full height of the viewport */
+    overflow: hidden; /* Hide the scrollbars */
 }
 
 .ellipse-goben {
