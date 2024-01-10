@@ -20,6 +20,73 @@ body{
     -o-background-size: cover;
     background-attachment: fixed;
     opacity: 0.4; /* 40% opacity */
+    z-index: -2;
+}
+
+.Zitat-container{
+    font-family:'Raleway',sans-serif;
+    font-style: italic;
+    text-align: right; 
+    padding:0px;  
+    margin-right: 50px;
+    margin-left: 300px;
+    
+    
+   
+}
+
+.bold-text-türkis-kreis{
+    font-family:'Raleway';
+    font-weight: 700; /*Bold*/
+    text-align: left;
+    margin-top: 70px;
+    margin-left: 210px;
+    margin-right: 600px;
+
+}
+
+.bold-text-weiss-kreis{
+    font-family:'Raleway';
+    font-weight: 700; /*Bold*/
+    font-size: 18px;
+    text-align: left;
+    margin-top: 30px;
+    margin-left: 650px;
+    margin-right: 220px;
+
+}
+
+.bold-türkis-text{
+    font-family:'Raleway';
+    font-weight: 700; /*Bold*/
+    color: darkcyan;
+    font-size: 40px;
+    position: absolute;
+    top: 40%;
+    text-align: left;
+    margin-left: 340px;
+    margin-right: 600px;
+    
+}
+
+
+
+.button{
+    width: 160px;
+    height: 40px;
+    background-color: rgb(154, 147, 147);
+    border: 2px solid #000 ;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    padding-top: 6px;
+    margin-left: 735px;
+    margin-right: 200px;
+    font-family:'Raleway';
+    font-weight: 700;/*Bold*/
+    font-size: 24px;
+    text-align: center;
+
 }
 
 
@@ -39,15 +106,35 @@ body{
     margin: 10px 20px 0px 5px;
 }
 
-.Zitat-container{
-    margin: 0;
-    padding: 0;
-    font-family: 'cursive'; /*Kann auch 'cursive' mit dem entsprechenden Font ersetzen*/
-    top: 0;
-    right: 0;
-    padding: 30px;
-    border-bottom-left-radius: 10px; 
+
+
+
+.ellipse-1 {
+    background: rgba(26, 184, 166, 0.3);
+    border-radius: 50%;
+    width: 470px;
+    height: 470px;
+    position: absolute;
+    left: 13%;
+    top: 192px;
+    opacity: 100%;
+    overflow: hidden;
+    z-index: -1;
 }
+
+.ellipse-2 {
+    background: rgba(237, 240, 240, 0.3);
+    border-radius: 50%;
+    width: 470px;
+    height: 470px;
+    position: absolute;
+    left: 48%;
+    top: 320px;
+    opacity: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
 
 footer {
 
