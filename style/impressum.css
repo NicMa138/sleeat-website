@@ -8,148 +8,235 @@ html {
 .hintergrundbild {
     z-index: 1; /* Setzt den z-index des Hintergrundbildes auf 0 */
 }
-.container-ellipsen {
-    position: relative; /* z-index funktioniert nur auf positionierten Elementen */
-    z-index: 2; /* Setzt den z-index der Ellipsen auf 1 */
+
+.ellipse-5,
+.ellipse-7,
+.ellipse-4,
+.ellipse-9,
+.ellipse-8 {
+  z-index: 2;  
+  display: none;
 }
 
-.ellipse-goben, .ellipse-gunten, .ellipse-boben, .ellipse-bmitte, .ellipse-bunten {
-    position: relative; /* z-index funktioniert nur auf positionierten Elementen */
-    z-index: 2; /* Setzt den z-index der Ellipsen auf 1 */
-}
-
-.container-impressum, .container-datenschutz .popup .datenschutz-content{
+.container-impressum, .container-datenschutz{
     position: relative; /* z-index funktioniert nur auf positionierten Elementen */
     z-index: 3; /* Setzt den z-index des Textes auf 2 */
 
 }
-
 .datenschutz-content{
     position: relative; /* z-index funktioniert nur auf positionierten Elementen */
     z-index: 4; /* Setzt den z-index des Textes auf 2 */
 }
 
-/*_________________________________HEADER VON IMPRESSUM_______________________________*/
-header{
-    display: flex;
-    align-items: center;
-    background-color: #e2dede81;
-
+h1{
+  color: #1ab8a6;
+  font-family: "Raleway-Bold", sans-serif;
+  font-size: 60px;
+  line-height: 70px;
+  font-weight: 700;
 }
-.logo{
-    
-    margin: 20px 10px 20px 20px;
+h3{
+  color: #000000;
+  font-family: "Raleway-Medium", sans-serif;
+  font-size: 25px;
+  line-height: 40px;
+  font-weight: 700;
 }
-
-.menu{
-  display: flex;
-  justify-content: space-around;
-  flex: 1;
-    margin: 10px 20px 5px 5px; 
-  
-    align-items: center;
-}
-.login{
-    margin: 10px 20px 0px 5px;
+p{
+  color: #000000;
+  font-family: "Raleway-Medium", sans-serif;
+  font-size: 25px;
+  line-height: 40px;
+  font-weight: 500;
 }
 
-.menuebutton{
-  background-color: #d6d0d081;
-  padding: 15px;
-  border-radius: 7px;
+.gewissentext, h2{
+  color: #000000;
+  font-family: "Raleway-Medium", sans-serif;
+  font-size: px;
+  line-height: 20px;
+  font-weight: 500;
 }
 
-/*Alle im Menu*/
-.menu a{
-  color: black;
-  font-size: 20px;
-  font-weight: bold;
-}
 
 /*_________________________________HINTERGRUND VON IMPRESSUM_______________________________*/
-.ueber-uns {
+.seite {
     background: #ffffff;
-    height: 3239px;
+    height: max-content;
     position: relative;
     overflow: hidden;
   }
 
 .hintergrundbild {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    position: fixed;
+    height: max-content;
     opacity: 40%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
   }
 
-.container-ellipsen {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%; /* Set the width to the full width of the viewport */
-    height: 100%; /* Set the height to the full height of the viewport */
-    overflow: hidden; /* Hide the scrollbars */
+.ellipse-5 {
+    animation: flyAround-ellipse-5 75s infinite 0s;
 }
-
-.ellipse-goben {
+.ellipse-7 {
+  animation: flyAround-ellipse-7 40s infinite 0s;
+}
+.ellipse-4 {
+  animation: flyAround-ellipse-4 140s infinite 0s;
+}
+.ellipse-9 {
+  animation: flyAround-ellipse-9 90s infinite 0s;
+}
+.ellipse-8 {
+  animation: flyAround-ellipse-8 50s infinite 0s;
+}
+.ellipse-5 {
+    background: rgba(26, 184, 166, 0.3);
+    border-radius: 50%;
+    width: 371px;
+    height: 371px;
+    position: absolute;
+    left: 10%;
+    top: 182px;
+    opacity: 70%;
+    overflow: hidden;
+  }
+  
+  .ellipse-7 {
     background: rgba(217, 217, 217, 0.7);
     border-radius: 50%;
-    width: 1004px;
-    height: 937px;
+    width: 350px;
+    height: 350px;
     position: absolute;
-    top: 339px;
-    left: -161px;    
+    left: 732px;
+    top: 1573px;
     opacity: 70%;
   }
   
-  .ellipse-gunten {
+  .ellipse-4 {
     background: rgba(217, 217, 217, 0.7);
+    border-radius: 50%;
+    width: 650px;
+    height: 650px;
+    position: absolute;
+    left: 0%;
+    top: 439px;
+    opacity: 70%;
+  }
+  
+  .ellipse-9 {
+    background: rgba(26, 184, 166, 0.25);
+    border-radius: 50%;
+    width: 600px;
+    height: 578px;
+    position: absolute;
+    left: 698px;
+    top: 1040px;
+    opacity: 70%;
+  }
+  
+  .ellipse-8 {
+    background: rgba(26, 184, 166, 0.25);
     border-radius: 50%;
     width: 900px;
     height: 900px;
     position: absolute;
-    top: 1573px;
-    right: -50px;
+    left: 44px;
+    top: 2124px;
     opacity: 70%;
   }
-
-  .ellipse-boben {
-    background: rgba(26, 184, 166, 0.25);
-    border-radius: 50%;
-    width: 700px;
-    height: 678px;
-    position: absolute;
-    top: 518px;
-    right: 50px;
-    opacity: 50%;
+  
+  
+  @keyframes flyAround-ellipse-5 {
+    0% {
+      transform: translate(0, 0);
     }
-
-    .ellipse-bmitte {
-        background: rgba(26, 184, 166, 0.25);
-        border-radius: 50%;
-        width: 700px;
-        height: 678px;
-        position: absolute;
-        top: 1100px;
-        left: 300px;
-        opacity: 50%;
-     }
-
-
-.ellipse-bunten {
-        background: rgba(26, 184, 166, 0.25);
-        border-radius: 50%;
-        width: 1884px;
-        height: 1794px;
-        position: absolute;
-        left: -444px;
-        top: 2124px;
-        opacity: 50%;
-     } */
-
+    25% {
+      transform: translate(850px, 250px);
+    }
+    50% {
+      transform: translate(550px, 950px);
+    }
+    80% {
+      transform: translate(-150px, 150px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+  
+  @keyframes flyAround-ellipse-7 {
+    0% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(-500px, 50px);
+    }
+    50% {
+      transform: translate(-300px, 250px);
+    }
+    75% {
+      transform: translate(100px, 150px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+  
+  @keyframes flyAround-ellipse-4 {
+    0% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(350px, 0);
+    }
+    50% {
+      transform: translate(0, -100px);
+    }
+    75% {
+      transform: translate(-50px, 0);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+  
+  @keyframes flyAround-ellipse-9 {
+    0% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(-550px, -30px);
+    }
+    50% {
+      transform: translate(-650px, 300px);
+    }
+    75% {
+      transform: translate(-150px, 300px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+  
+  @keyframes flyAround-ellipse-8 {
+    0% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(400px, 100px);
+    }
+    50% {
+      transform: translate(400px, -100px);
+    }
+    75% {
+      transform: translate(200px, 100px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
 
 
      .container-impressum, .container-datenschutz {
@@ -171,54 +258,49 @@ header{
 .flex-firmagewissen {
     display: flex; /* Set the parent element as a flex container */
     align-items: flex-start;
+    flex-direction: row;
 }
-
+@media (max-width: 760px) {
+  .flex-firmagewissen {
+      flex-direction: column;
+  }
+}
 .firma {
     flex: 0 0 50%; /* Set the width of .firma to 50% */
-    margin: 10px 10px 10px 0px; /* Add margin around .firma */
 }
-
 .gewissenbildtext {
     display: flex;
     align-items: center;
 }
 .gewissentext {
     flex: 1; /* Let .gewissen take up the remaining space */
-    margin: 10px; /* Add margin around .gewissen */
+    margin-top: 32px;
+    margin-left: 10px;
 }
-
 .gewissenbild {
     width: 50px;
     height: 55px;
+}
+
+.flex-impressum {
+    display: flex; /* Set the parent element as a flex container */
+    align-items: flex-start;
+    width: 100%;
+
+}
+.textimpressum {
+    flex: 0 0 80%;
+    margin: 10px 10px 10px 0px;
+}
+.leerraumimpressum{
+    display: flex;
+    align-items: center;
 }
 
 
 
 /*_________________________________TEXTINHALT VON DATENSCHUTZ_______________________________*/
 
-
-/* Stile für Bildschirme mit einer Breite von bis zu 600px (Mobilegeräte)*/ 
-    @media (max-width: 600px) {
-        .container {
-            width: 100%;
-         
-        }
-
-        .datenschutz, .impressum-content {
-            padding: 10px;
-        }
-
-        .hintergrundbild {
-            width: auto;
-            height: 100vh;
-            position: absolute;
-            left: 0px;
-            top: 0px;
-            box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-            opacity: 40%;
-            background-size: cover; /* Stellt sicher, dass das Hintergrundbild den gesamten Container abdeckt */
-            background-position: center;
-        }
-        
-    }
-
+.datenschutz {
+  font-size: 5vw; /* Adjust as needed */
+}
