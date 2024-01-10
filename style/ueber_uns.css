@@ -1,295 +1,125 @@
 
-
 .ueber-uns {
-  background: #ffffff;
-  height: 3239px;
-  position: relative;
   overflow: hidden;
 }
 
 .hintergrundbild {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  opacity: 40%;
+  background: no-repeat center center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-attachment: fixed;
+  opacity: 0.4; /* 40% opacity */
 }
 
-.ellipse-5 {
-  background: rgba(26, 184, 166, 0.3);
-  border-radius: 50%;
-  width: 771px;
-  height: 771px;
-  position: absolute;
-  left: 649px;
-  top: 682px;
-}
-
-.ellipse-7 {
-  background: rgba(217, 217, 217, 0.7);
-  border-radius: 50%;
-  width: 849px;
-  height: 851px;
-  position: absolute;
-  left: 632px;
-  top: 1273px;
-}
-
-.ellipse-4 {
-  background: rgba(217, 217, 217, 0.7);
-  border-radius: 50%;
-  width: 1004px;
-  height: 937px;
-  position: absolute;
-  left: -161px;
-  top: 439px;
-}
-
-.ellipse-9 {
-  background: rgba(26, 184, 166, 0.25);
-  border-radius: 50%;
-  width: 700px;
-  height: 678px;
-  position: absolute;
-  left: 98px;
-  top: 1040px;
-}
-
-.ellipse-8 {
-  background: rgba(26, 184, 166, 0.25);
-  border-radius: 50%;
-  width: 1884px;
-  height: 1794px;
-  position: absolute;
-  left: -444px;
-  top: 2124px;
-}
-
-.footer {
-  width: 100%;
-  height: 188px;
-  position: absolute;
-  left: 0px;
-  top: 3051px;
-}
-
-.rectangle-2 {
-  background: rgba(164, 166, 152, 0.5);
-  position: absolute;
-  right: 0%;
-  left: 0%;
-  width: 100%;
-  bottom: 0%;
-  top: 0%;
-  height: 100%;
-}
-
-.logo {
-  position: absolute;
-  right: 86.32%;
-  left: 3.26%;
-  width: 10.42%;
-  bottom: calc(37.95% + 10px);
-  top: calc(36.7% - 10px);
-}
-
-.impressum-datenschutz-ueber-uns {
-  color: #000000;
-  text-align: center;
-  font-family: "Poppins-Light", sans-serif;
-  font-size: 20px;
-  line-height: 40px;
-  font-weight: 300;
-  position: absolute;
-  right: 38.89%;
-  left: 39.93%;
-  width: 21.18%;
-  bottom: 14.36%;
-  top: 18.09%;
-  height: 67.55%;
-}
-
-.facebook {
-  height: auto;
-  position: absolute;
-  right: 11.25%;
-  left: 84.93%;
-  width: 3.82%;
-  bottom: 36.17%;
-  top: 34.04%;
-  height: 29.79%;
-  overflow: visible;
-}
-
-.instagram {
-  height: auto;
-  position: absolute;
-  right: 17.71%;
-  left: 78.12%;
-  width: 4.17%;
-  bottom: 35.64%;
-  top: 34.04%;
-  height: 30.32%;
-  overflow: visible;
-}
-
-.vanessa {
-  color: #000000;
-  text-align: left;
-  position: absolute;
-  left: 150px;
-  top: 851px;
-  width: 369px;
-  height: 240px;
-}
-
-.vanessa-span {
-  color: #000000;
-  font-family: "Raleway-SemiBold", sans-serif;
+.koepfe {
+  color: #1ab8a6;
+  font-family: "Raleway-Bold", sans-serif;
   font-size: 60px;
-  line-height: 40px;
-  font-weight: 600;
+  line-height: 70px;
+  font-weight: 700;
+  position: relative;
+  top: 40px;
+  width: 80%;
+  left: 10%;
+  height: 194px;
+  z-index: 2;
 }
 
-.vanessa-span2 {
-  color: #000000;
-  font-family: "Raleway-Medium", sans-serif;
-  font-size: 20px;
-  line-height: 25px;
-  font-weight: 500;
+.flexpersonen {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: absolute;
+  left: 10%;
+  top: 300px;
 }
 
+.vanessa,
+.simon,
+.nicole,
+.carolina,
 .moritz {
+  flex: 0 1 30%;
   color: #000000;
   text-align: left;
-  position: absolute;
-  left: 150px;
-  top: 1403px;
-  width: 369px;
-  height: 158px;
+  width: max-content;
+  height: max-content;
+  position: relative;
+  margin-bottom: 5vh;
 }
 
+.vanessa-span,
+.simon-span,
+.nicole-span,
+.carolina-span,
 .moritz-span {
   color: #000000;
   font-family: "Raleway-SemiBold", sans-serif;
   font-size: 60px;
   line-height: 40px;
   font-weight: 600;
+  position: relative;
+  margin-top: 3vh;
+  top: 100%;
+  margin-bottom: 3px;
 }
 
+.vanessa-span2,
+.nicole-span2,
+.simon-span2,
+.carolina-span2,
 .moritz-span2 {
   color: #000000;
   font-family: "Raleway-Medium", sans-serif;
   font-size: 20px;
   line-height: 25px;
   font-weight: 500;
+  position: relative;
+  top: 150%;
 }
 
-.nicole {
-  color: #000000;
-  text-align: right;
-  position: absolute;
-  left: 826px;
-  top: 1767px;
-  width: 368px;
-  height: 184px;
+.vanessa-portrait,
+.simon-portrait,
+.nicole-portrait,
+.carolina-portrait,
+.moritz-portrait {
+  width: 100%;
+  height: 343px;
 }
 
-.nicole-span {
-  color: #000000;
-  font-family: "Raleway-SemiBold", sans-serif;
-  font-size: 60px;
-  line-height: 40px;
-  font-weight: 600;
+.bild_vanessa,
+.bild_simon,
+.bild_nicole,
+.bild_carolina,
+.bild_moritz {
+  height: 100%;
+  position: relative;
 }
 
-.nicole-span2 {
-  color: #000000;
-  font-family: "Raleway-Medium", sans-serif;
-  font-size: 20px;
-  line-height: 25px;
-  font-weight: 500;
-}
 
-.koepfe {
-  color: #1ab8a6;
-  text-align: left;
-  font-family: "Raleway-Bold", sans-serif;
-  font-size: 60px;
-  line-height: 70px;
-  font-weight: 700;
-  position: absolute;
-  left: 150px;
-  top: 150px;
-  width: 80vw;
-  height: 194px;
-}
 
-.carolina {
-  color: #000000;
-  text-align: right;
-  position: absolute;
-  left: 725px;
-  top: 1148px;
-  width: 272px;
-  height: 195px;
-}
 
-.carolina-span {
-  color: #000000;
-  font-family: "Raleway-SemiBold", sans-serif;
-  font-size: 60px;
-  line-height: 40px;
-  font-weight: 600;
-}
 
-.carolina-span2 {
-  color: #000000;
-  font-family: "Raleway-Medium", sans-serif;
-  font-size: 20px;
-  line-height: 25px;
-  font-weight: 500;
-}
 
-.simon {
-  color: #000000;
-  text-align: right;
-  position: absolute;
-  left: 727px;
-  top: 851px;
-  width: 373px;
-  height: 189px;
-}
-
-.simon-span {
-  color: #000000;
-  font-family: "Raleway-SemiBold", sans-serif;
-  font-size: 60px;
-  line-height: 40px;
-  font-weight: 600;
-}
-
-.simon-span2 {
-  color: #000000;
-  font-family: "Raleway-Medium", sans-serif;
-  font-size: 20px;
-  line-height: 25px;
-  font-weight: 500;
-}
 
 .gruendungsgeschichte {
-  text-align: left;
-  position: absolute;
-  left: calc(50% - 562px);
-  top: calc(50% - -657.5px);
+  text-align: center;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 130px;
   width: 1044px;
   height: 774px;
-  display: flex;
   align-items: center;
-  justify-content: flex-start;
+  z-index: 2;
+  display: none;
 }
 
 .gruendungsgeschichte-span {
@@ -308,393 +138,191 @@
   font-weight: 500;
 }
 
-.vanessa-portrait {
-  width: 273px;
-  height: 343px;
-  position: absolute;
-  left: 150px;
-  top: 498px;
+.video_sleeat {
+  width: calc(100% - 40px);
+  height: calc(100% - 40px); 
+  max-width: 70%; 
+  max-height: 70vh;  /* Begrenze die Höhe auf 70% der Bildschirmhöhe */
+  margin: auto;      /* Zentriere das Video horizontal */
+  display: block;    /* Verhindere zusätzlichen Leerraum unter dem Video */
+  position: absolute; /* Ändere die Position zu absolut */
+  bottom: 0;         /* Setze den Abstand zum unteren Rand auf 0 */
+  transform: translateX(-50%);
+  left: 50%; 
+  z-index: 1;
+  display: none;
 }
 
-.bild_vanessa {
-  position: absolute;
-  right: 0%;
-  left: 0%;
-  width: 100%;
-  bottom: 0%;
-  top: 0%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.moritz-portrait {
-  width: 273px;
-  height: 343px;
-  position: absolute;
-  left: 343px;
-  top: 1101px;
-}
-
-.bild_moritz {
-  position: absolute;
-  right: 0%;
-  left: 0%;
-  width: 100%;
-  bottom: 0%;
-  top: 0%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.nicole-portrait {
-  width: 273px;
-  height: 343px;
-  position: absolute;
-  left: 728px;
-  top: 1465px;
-}
-
-.bild_nicole {
-  position: absolute;
-  right: 0%;
-  left: 0%;
-  width: 100%;
-  bottom: 0%;
-  top: 0%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.carolina-portrait {
-  width: 273px;
-  height: 343px;
-  position: absolute;
-  left: 1017px;
-  top: 1067px;
-}
-
-.bild_carolina {
-  position: absolute;
-  right: 0%;
-  left: 0%;
-  width: 100%;
-  bottom: 0%;
-  top: 0%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.simon-portrait {
-  width: 273px;
-  height: 343px;
-  position: absolute;
-  left: 635px;
-  top: 549px;
-}
-
-.bild_simon {
-  position: absolute;
-  right: 0%;
-  left: 0%;
-  width: 100%;
-  bottom: 0%;
-  top: 0%;
-  height: 100%;
-  object-fit: cover;
-}
-
-
-.button {
-  background: #afb3b2;
-  border-radius: 40px;
-  border-style: solid;
-  border-color: #000000;
-  border-width: 2px;
-  padding: 5px 5px 5px 5px;
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-  width: 280px;
-  height: 65px;
-  position: absolute;
-  left: 20%;
-  top: 67px;
-  box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  overflow: hidden;
-}
-
-.button:hover {
+.ellipse-5 {
   background: rgba(26, 184, 166, 0.3);
-  border-radius: 40px;
-  border-style: solid;
-  border-color: #000000;
-  border-width: 2px;
-  padding: 5px 60px 5px 60px;
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-  width: 280px;
-  height: 65px;
+  border-radius: 50%;
+  width: 471px;
+  height: 471px;
   position: absolute;
-  left: 20%;
-  top: 67px;
-  box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  left: 10%;
+  top: 182px;
+  opacity: 100%;
   overflow: hidden;
 }
 
-.button2 {
-  background: #afb3b2;
-  border-radius: 40px;
-  border-style: solid;
-  border-color: #000000;
-  border-width: 2px;
-  padding: 5px 5px 5px 5px;
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-  width: 280px;
-  height: 65px;
-  position: relative;
-  left: 45%;
-  top: 67px;
-  box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  overflow: hidden;
-}
-
-.button2:hover {
-  background: rgba(26, 184, 166, 0.3);
-  border-radius: 40px;
-  border-style: solid;
-  border-color: #000000;
-  border-width: 2px;
-  padding: 5px 60px 5px 60px;
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-  width: 280px;
-  height: 65px;
+.ellipse-7 {
+  background: rgba(217, 217, 217, 0.7);
+  border-radius: 50%;
+  width: 450px;
+  height: 450px;
   position: absolute;
-  left: 45%;
-  top: 67px;
-  box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  overflow: hidden;
+  left: 732px;
+  top: 1573px;
+  opacity: 100%;
 }
 
-.moechtest-du-reisen {
-  color: #000000;
-  text-align: center;
-  font-family: "Raleway-Bold", sans-serif;
-  font-size: 22px;
-  line-height: 60px;
-  font-weight: 700;
-  position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.ja-ich-moechte-reisen {
-  color: #000000;
-  text-align: center;
-  font-family: "Raleway-Bold", sans-serif;
-  font-size: 22px;
-  line-height: 60px;
-  font-weight: 700;
-  position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-button .ja-ich-moechte-hosten {
-  display: none;
-}
-
-button:hover .moechtest-du-hosten {
-  display: none;
-}
-
-button:hover .ja-ich-moechte-hosten {
-  display: contents;
-}
-
-button .ja-ich-moechte-reisen {
-  display: none;
-}
-
-button:hover .moechtest-du-reisen {
-  display: none;
-}
-
-button:hover .ja-ich-moechte-reisen {
-  display: contents;
-}
-
-.moechtest-du-hosten {
-  color: #000000;
-  text-align: center;
-  font-family: "Raleway-Bold", sans-serif;
-  font-size: 22px;
-  line-height: 60px;
-  font-weight: 700;
-  position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.ja-ich-moechte-hosten {
-  color: #000000;
-  text-align: center;
-  font-family: "Raleway-Bold", sans-serif;
-  font-size: 22px;
-  line-height: 60px;
-  font-weight: 700;
-  position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-
-
-.button-ueber-uns {
-  width: 153px;
-  height: 54px;
+.ellipse-4 {
+  background: rgba(217, 217, 217, 0.7);
+  border-radius: 50%;
+  width: 750px;
+  height: 750px;
   position: absolute;
-  left: 69%;
-  top: 83px;
-}
-
-.button-ueber-uns2 {
-  color: #000000;
-  text-align: center;
-  font-family: "Raleway-ExtraBold", sans-serif;
-  font-size: 25px;
-  line-height: 40px;
-  font-weight: 800;
-  position: absolute;
-  right: 0%;
   left: 0%;
-  width: 100%;
-  bottom: 0%;
-  top: 0%;
-  height: 100%;
+  top: 439px;
+  opacity: 100%;
 }
 
-.button-kontakt {
-  width: 153px;
-  height: 54px;
+.ellipse-9 {
+  background: rgba(26, 184, 166, 0.25);
+  border-radius: 50%;
+  width: 700px;
+  height: 678px;
   position: absolute;
-  left: 80%;
-  top: 83px;
+  left: 698px;
+  top: 1040px;
+  opacity: 100%;
 }
 
-.button-kontakt2 {
-  color: #000000;
-  text-align: center;
-  font-family: "Roboto-Regular", sans-serif;
-  font-size: 25px;
-  line-height: 40px;
-  font-weight: 400;
+.ellipse-8 {
+  background: rgba(26, 184, 166, 0.25);
+  border-radius: 50%;
+  width: 1000px;
+  height: 1000px;
   position: absolute;
-  right: 0%;
-  left: 0%;
-  width: 100%;
-  bottom: 0%;
-  top: 0%;
-  height: 100%;
+  left: 44px;
+  top: 2124px;
+  opacity: 100%;
 }
 
-.button-login {
-  width: 60px;
-  height: 59.5px;
-  position: absolute;
-  left: 93%;
-  top: 72px;
+.ellipse-5,
+.ellipse-7,
+.ellipse-4,
+.ellipse-9,
+.ellipse-8 {
+  z-index: -1;     /* Setze den Z-Index auf einen negativen Wert */
 }
 
-.button-login2 {
-  position: absolute;
-  right: 0%;
-  left: 0%;
-  width: 100%;
-  bottom: 0%;
-  top: 0%;
-  height: 100%;
+@keyframes flyAround-ellipse-5 {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(850px, 250px);
+  }
+  50% {
+    transform: translate(550px, 950px);
+  }
+  80% {
+    transform: translate(-150px, 150px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
 }
 
-@media screen and (max-width: 1320px) {
-  .koepfe {
-    color: #1ab8a6;
-    text-align: left;
-    font-family: "Raleway-Bold", sans-serif;
-    font-size: 60px;
-    line-height: 70px;
-    font-weight: 700;
-    position: absolute;
-    left: 11.5%;
-    top: 150px;
-    width: 80vw;
-    height: 194px;
+@keyframes flyAround-ellipse-7 {
+  0% {
+    transform: translate(0, 0);
   }
+  25% {
+    transform: translate(-500px, 50px);
+  }
+  50% {
+    transform: translate(-300px, 250px);
+  }
+  75% {
+    transform: translate(100px, 150px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
 
-  .ellipse-5 {
-    background: rgba(26, 184, 166, 0.3);
-    border-radius: 50%;
-    width: 771px;
-    height: 771px;
-    position: absolute;
-    left: 49.5%;
-    top: 682px;
+@keyframes flyAround-ellipse-4 {
+  0% {
+    transform: translate(0, 0);
   }
-  
-  .ellipse-7 {
-    background: rgba(217, 217, 217, 0.7);
-    border-radius: 50%;
-    width: 849px;
-    height: 851px;
-    position: absolute;
-    left: 49.5%;
-    top: 1273px;
+  25% {
+    transform: translate(350px, 0);
   }
-  
-  .ellipse-4 {
-    background: rgba(217, 217, 217, 0.7);
-    border-radius: 50%;
-    width: 1004px;
-    height: 937px;
-    position: absolute;
-    left: -161px;
-    top: 439px;
+  50% {
+    transform: translate(0, -100px);
   }
-  
-  .ellipse-9 {
-    background: rgba(26, 184, 166, 0.25);
-    border-radius: 50%;
-    width: 700px;
-    height: 678px;
-    position: absolute;
-    left: 7%;
-    top: 1040px;
+  75% {
+    transform: translate(-50px, 0);
   }
-  
-  .ellipse-8 {
-    background: rgba(26, 184, 166, 0.25);
-    border-radius: 50%;
-    width: 1884px;
-    height: 1794px;
-    position: absolute;
-    left: -444px;
-    top: 2124px;
+  100% {
+    transform: translate(0, 0);
   }
+}
 
+@keyframes flyAround-ellipse-9 {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-550px, -30px);
+  }
+  50% {
+    transform: translate(-650px, 300px);
+  }
+  75% {
+    transform: translate(-150px, 300px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes flyAround-ellipse-8 {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(400px, 100px);
+  }
+  50% {
+    transform: translate(400px, -100px);
+  }
+  75% {
+    transform: translate(200px, 100px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.ellipse-5 {
+    animation: flyAround-ellipse-5 75s infinite 0s;
+}
+
+.ellipse-7 {
+  animation: flyAround-ellipse-7 40s infinite 0s;
+}
+
+.ellipse-4 {
+  animation: flyAround-ellipse-4 140s infinite 0s;
+}
+
+.ellipse-9 {
+  animation: flyAround-ellipse-9 90s infinite 0s;
+}
+
+.ellipse-8 {
+  animation: flyAround-ellipse-8 50s infinite 0s;
 }
