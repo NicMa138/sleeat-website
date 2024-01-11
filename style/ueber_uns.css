@@ -2,17 +2,20 @@
 .ueber-uns {
   overflow: hidden;
   height: max-content;
+  width: 100%;
+  position: relative;
 }
 
 .hintergrundbild {
   position: fixed;
   top: 0;
   left: 0;
-  background: no-repeat center center fixed;
+  background: repeat center center fixed;
   background-size: cover;
   background-attachment: fixed;
   opacity: 40%;
   z-index: -2;
+  background-repeat: repeat;
 }
 
 .koepfe {
@@ -123,7 +126,7 @@
   color: #1ab8a6;
   font-family: "Raleway-Bold", sans-serif;
   font-size: 60px;
-  line-height: 40px;
+  line-height: 70px;
   font-weight: 700;
 }
 
@@ -135,19 +138,19 @@
   font-weight: 500;
 }
 
-.video_sleeat {
-  width: calc(100% - 40px);
-  height: calc(100% - 40px); 
-  max-width: 70%; 
-  max-height: 70vh;  /* Begrenze die Höhe auf 70% der Bildschirmhöhe */
-  margin: auto;      /* Zentriere das Video horizontal */
-  display: block;    /* Verhindere zusätzlichen Leerraum unter dem Video */
-  position: absolute; /* Ändere die Position zu absolut */
-  margin-top: 10vh;         /* Setze den Abstand zum unteren Rand auf 0 */
-  transform: translateX(-50%);
-  left: 50%; 
-  z-index: 1;
+video {
+  width: 70vw;
 }
+
+.videodiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+
+}
+
 
 .ellipse-5 {
   background: rgba(26, 184, 166, 0.3);
@@ -155,10 +158,9 @@
   width: 471px;
   height: 471px;
   position: absolute;
-  left: 10%;
+  left: calc(10%);
   top: 182px;
-  opacity: 100%;
-  overflow: hidden;
+  opacity: 50%;
 }
 
 .ellipse-7 {
@@ -167,9 +169,9 @@
   width: 450px;
   height: 450px;
   position: absolute;
-  left: 732px;
+  left: calc(62%);
   top: 1573px;
-  opacity: 100%;
+  opacity: 70%;
 }
 
 .ellipse-4 {
@@ -178,9 +180,9 @@
   width: 750px;
   height: 750px;
   position: absolute;
-  left: 0%;
+  left: calc(3%);
   top: 439px;
-  opacity: 100%;
+  opacity: 70%;
 }
 
 .ellipse-9 {
@@ -189,20 +191,20 @@
   width: 700px;
   height: 678px;
   position: absolute;
-  left: 698px;
+  left: calc(40%);
   top: 1040px;
-  opacity: 100%;
+  opacity: 50%;
 }
 
 .ellipse-8 {
   background: rgba(26, 184, 166, 0.25);
   border-radius: 50%;
-  width: 1000px;
-  height: 1000px;
+  width: 900px;
+  height: 900px;
   position: absolute;
-  left: 44px;
-  top: 2124px;
-  opacity: 100%;
+  left: calc(8%);
+  top: 1824px;
+  opacity: 50%;
 }
 
 .ellipse-5,
@@ -210,98 +212,10 @@
 .ellipse-4,
 .ellipse-9,
 .ellipse-8 {
-  z-index: -1;     /* Setze den Z-Index auf einen negativen Wert */
+  z-index: -1;  
+  overflow:auto;
 }
 
-@keyframes flyAround-ellipse-5 {
-  0% {
-    transform: translate(0, 0);
-  }
-  25% {
-    transform: translate(850px, 250px);
-  }
-  50% {
-    transform: translate(550px, 950px);
-  }
-  80% {
-    transform: translate(-150px, 150px);
-  }
-  100% {
-    transform: translate(0, 0);
-  }
-}
-
-@keyframes flyAround-ellipse-7 {
-  0% {
-    transform: translate(0, 0);
-  }
-  25% {
-    transform: translate(-500px, 50px);
-  }
-  50% {
-    transform: translate(-300px, 250px);
-  }
-  75% {
-    transform: translate(100px, 150px);
-  }
-  100% {
-    transform: translate(0, 0);
-  }
-}
-
-@keyframes flyAround-ellipse-4 {
-  0% {
-    transform: translate(0, 0);
-  }
-  25% {
-    transform: translate(350px, 0);
-  }
-  50% {
-    transform: translate(0, -100px);
-  }
-  75% {
-    transform: translate(-50px, 0);
-  }
-  100% {
-    transform: translate(0, 0);
-  }
-}
-
-@keyframes flyAround-ellipse-9 {
-  0% {
-    transform: translate(0, 0);
-  }
-  25% {
-    transform: translate(-550px, -30px);
-  }
-  50% {
-    transform: translate(-650px, 300px);
-  }
-  75% {
-    transform: translate(-150px, 300px);
-  }
-  100% {
-    transform: translate(0, 0);
-  }
-}
-
-@keyframes flyAround-ellipse-8 {
-  0% {
-    transform: translate(0, 0);
-  }
-  25% {
-    transform: translate(400px, 100px);
-  }
-  50% {
-    transform: translate(400px, -100px);
-  }
-  75% {
-    transform: translate(200px, 100px);
-  }
-  100% {
-    transform: translate(0, 0);
-  }
-}
 
 .ellipse-5 {
     animation: flyAround-ellipse-5 75s infinite 0s;
@@ -321,4 +235,195 @@
 
 .ellipse-8 {
   animation: flyAround-ellipse-8 50s infinite 0s;
+}
+
+
+
+
+@keyframes flyAround-ellipse-5 {
+  0% {
+    transform: translate(0%, 0%);
+  }
+  25% {
+    transform: translate(150%, 25%);
+  }
+  50% {
+    transform: translate(70%, 95%);
+  }
+  80% {
+    transform: translate(-15%, 15%);
+  }
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
+
+@keyframes flyAround-ellipse-7 {
+  0% {
+    transform: translate(0%, 0%);
+  }
+  25% {
+    transform: translate(-50%, 5%);
+  }
+  50% {
+    transform: translate(-30%, 25%);
+  }
+  75% {
+    transform: translate(10%, 15%);
+  }
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
+
+@keyframes flyAround-ellipse-4 {
+  0% {
+    transform: translate(0%, 0%);
+  }
+  25% {
+    transform: translate(35%, 0%);
+  }
+  50% {
+    transform: translate(0%, -10%);
+  }
+  75% {
+    transform: translate(-5%, 0%);
+  }
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
+
+@keyframes flyAround-ellipse-9 {
+  0% {
+    transform: translate(0%, 0%);
+  }
+  25% {
+    transform: translate(-45%, -3%);
+  }
+  50% {
+    transform: translate(-55%, 30%);
+  }
+  75% {
+    transform: translate(-15%, 30%);
+  }
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
+
+@keyframes flyAround-ellipse-8 {
+  0% {
+    transform: translate(0%, 0%);
+  }
+  25% {
+    transform: translate(35%, 10%);
+  }
+  50% {
+    transform: translate(35%, -10%);
+  }
+  75% {
+    transform: translate(20%, 10%);
+  }
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .koepfe {
+    color: #1ab8a6;
+    font-family: "Raleway-Bold", sans-serif;
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 700;
+    position: relative;
+    top: 40px;
+    width: 80%;
+    left: 10%;
+    height: 194px;
+    z-index: 2;
+    margin-bottom: 15vh;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .koepfe {
+    color: #1ab8a6;
+    font-family: "Raleway-Bold", sans-serif;
+    font-size: 45px;
+    line-height: 70px;
+    font-weight: 700;
+    position: relative;
+    top: 40px;
+    width: 80%;
+    left: 10%;
+    height: 194px;
+    z-index: 2;
+    margin-bottom: 15vh;
+  }
+}
+
+@media screen and (max-width: 466px) {
+  .koepfe {
+    color: #1ab8a6;
+    font-family: "Raleway-Bold", sans-serif;
+    font-size: 45px;
+    line-height: 70px;
+    font-weight: 700;
+    position: relative;
+    top: 40px;
+    width: 80%;
+    left: 10%;
+    height: 194px;
+    z-index: 2;
+    margin-bottom: 22vh;
+  }
+}
+
+@media screen and (max-width: 444px) {
+  .koepfe {
+    color: #1ab8a6;
+    font-family: "Raleway-Bold", sans-serif;
+    font-size: 45px;
+    line-height: 70px;
+    font-weight: 700;
+    position: relative;
+    top: 40px;
+    width: 80%;
+    left: 10%;
+    height: 194px;
+    z-index: 2;
+    margin-bottom: 30vh;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .gruendungsgeschichte-span {
+    color: #1ab8a6;
+    font-family: "Raleway-Bold", sans-serif;
+    font-size: 45px;
+    line-height: 50px;
+    font-weight: 700;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .gruendungsgeschichte-span {
+    color: #1ab8a6;
+    font-family: "Raleway-Bold", sans-serif;
+    font-size: 35px;
+    line-height: 35px;
+    font-weight: 700;
+  }
+}
+
+@media screen and (max-width: 444px) {
+  .gruendungsgeschichte-span {
+    color: #1ab8a6;
+    font-family: "Raleway-Bold", sans-serif;
+    font-size: 30px;
+    line-height: 25px;
+    font-weight: 700;
+  }
 }
