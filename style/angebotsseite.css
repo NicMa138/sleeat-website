@@ -34,16 +34,17 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: min(10%, 10px) auto;
+    margin: 4vw;
     padding: 35px;
-    width: 90%;
     max-width: 1;
     border-radius: 10px;
     box-shadow: 0 50 50px rgba(0,0,0,0.1);
     text-align: center;
     line-height: 3;
     background-color:rgba(49, 80, 60, 0.41);
+    grid-template-columns: repeat(1, 1fr)
 }
+
 
 .checkbox-group {
     text-align: left;
@@ -209,3 +210,40 @@ menu {
     overflow: visible;
   }
   
+  /* CSS Style für Host Abbildung */
+
+  .inserate {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2vw;
+    margin: 0 4vw 4vw 4vw;
+  }
+
+.flexbox {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: grey;
+}
+
+.inserate img {
+  width: 80%;
+  margin-top: 2vw;
+}
+
+.inserat-titel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+  .inserate {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
