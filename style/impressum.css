@@ -35,6 +35,15 @@ h1{
   line-height: 70px;
   font-weight: 700;
 }
+
+.gewissentext, h2{
+  color: #000000;
+  font-family: "Raleway-Medium", sans-serif;
+  font-size: px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
 h3{
   color: #000000;
   font-family: "Raleway-Medium", sans-serif;
@@ -50,30 +59,25 @@ p{
   font-weight: 500;
 }
 
-.gewissentext, h2{
-  color: #000000;
-  font-family: "Raleway-Medium", sans-serif;
-  font-size: px;
-  line-height: 20px;
-  font-weight: 500;
-}
+
 
 
 /*_________________________________HINTERGRUND VON IMPRESSUM_______________________________*/
 .seite {
-    background: #ffffff;
     height: max-content;
     position: relative;
     overflow: hidden;
   }
 
-.hintergrundbild {
+  .hintergrundbild {
     position: fixed;
-    height: max-content;
+    top: 0;
+    left: 0;
+    background: no-repeat center center fixed;
+    background-size: cover;
+    background-attachment: fixed;
     opacity: 40%;
-    top: 0px;
-    left: 0px;
-    width: 100%;
+    z-index: -2;
   }
 
 .ellipse-5 {
