@@ -9,15 +9,6 @@ html {
     z-index: 1; /* Setzt den z-index des Hintergrundbildes auf 0 */
 }
 
-.ellipse-5,
-.ellipse-7,
-.ellipse-4,
-.ellipse-9,
-.ellipse-8 {
-  z-index: 2;  
-  display: none;
-}
-
 .container-impressum, .container-datenschutz{
     position: relative; /* z-index funktioniert nur auf positionierten Elementen */
     z-index: 3; /* Setzt den z-index des Textes auf 2 */
@@ -28,233 +19,119 @@ html {
     z-index: 4; /* Setzt den z-index des Textes auf 2 */
 }
 
-h1{
+/*_________________________________TEXTFORMATIERUNG_______________________________*/
+.Titel{
   color: #1ab8a6;
   font-family: "Raleway-Bold", sans-serif;
-  font-size: 60px;
+  font-size: min(max(40px, 7vw), 60px);
   line-height: 70px;
   font-weight: 700;
 }
+
+
 h3{
   color: #000000;
   font-family: "Raleway-Medium", sans-serif;
-  font-size: 25px;
+  font-size: min(max(18px, 3vw), 25px);
   line-height: 40px;
   font-weight: 700;
+  margin-bottom: 1%;
+  line-height: 30px;
 }
 p{
   color: #000000;
   font-family: "Raleway-Medium", sans-serif;
-  font-size: 25px;
+  font-size: min(max(15px, 2vw), 25px);
   line-height: 40px;
   font-weight: 500;
+  margin-top: 1%;
 }
 
-.gewissentext, h2{
+.Kontakt{
   color: #000000;
   font-family: "Raleway-Medium", sans-serif;
-  font-size: px;
+  font-size: min(max(15px, 2vw), 25px);
+  line-height: 110%;
+  font-weight: 500;
+margin: 1% 0px 1% 0px;
+}
+
+
+h5{
+  color: #000000;
+  font-family: "Raleway-Medium", sans-serif;
+  font-size: min(max(15px, 1vw), 20px);
   line-height: 20px;
   font-weight: 500;
 }
 
+@media (max-width: 868px) {
+  p{
+    line-height: 35px;
+  }
+  }
+@media (max-width: 760px) {
+  p{
+    line-height: 30px;
+  }
+  }
+
+h6 {
+    color: #1ab8a6;
+    text-decoration: underline;
+    font-family: "Raleway-Medium", sans-serif;
+    font-size: min(max(15px, 2vw), 25px);
+    line-height: 150%;
+    font-weight: 500;
+    margin: 1% 0px 1% 0px;
+}
+
+
 
 /*_________________________________HINTERGRUND VON IMPRESSUM_______________________________*/
 .seite {
-    background: #ffffff;
     height: max-content;
     position: relative;
     overflow: hidden;
   }
 
-.hintergrundbild {
+  .hintergrundbild {
     position: fixed;
-    height: max-content;
+    top: 0;
+    left: 0;
+    background: no-repeat center center fixed;
+    background-size: cover;
+    background-attachment: fixed;
     opacity: 40%;
-    top: 0px;
-    left: 0px;
-    width: 100%;
+    z-index: -2;
   }
 
-.ellipse-5 {
-    animation: flyAround-ellipse-5 75s infinite 0s;
-}
-.ellipse-7 {
-  animation: flyAround-ellipse-7 40s infinite 0s;
-}
-.ellipse-4 {
-  animation: flyAround-ellipse-4 140s infinite 0s;
-}
-.ellipse-9 {
-  animation: flyAround-ellipse-9 90s infinite 0s;
-}
-.ellipse-8 {
-  animation: flyAround-ellipse-8 50s infinite 0s;
-}
-.ellipse-5 {
-    background: rgba(26, 184, 166, 0.3);
-    border-radius: 50%;
-    width: 371px;
-    height: 371px;
-    position: absolute;
-    left: 10%;
-    top: 182px;
-    opacity: 70%;
-    overflow: hidden;
-  }
-  
-  .ellipse-7 {
-    background: rgba(217, 217, 217, 0.7);
-    border-radius: 50%;
-    width: 350px;
-    height: 350px;
-    position: absolute;
-    left: 732px;
-    top: 1573px;
-    opacity: 70%;
-  }
-  
-  .ellipse-4 {
-    background: rgba(217, 217, 217, 0.7);
-    border-radius: 50%;
-    width: 650px;
-    height: 650px;
-    position: absolute;
-    left: 0%;
-    top: 439px;
-    opacity: 70%;
-  }
-  
-  .ellipse-9 {
-    background: rgba(26, 184, 166, 0.25);
-    border-radius: 50%;
-    width: 600px;
-    height: 578px;
-    position: absolute;
-    left: 698px;
-    top: 1040px;
-    opacity: 70%;
-  }
-  
-  .ellipse-8 {
-    background: rgba(26, 184, 166, 0.25);
-    border-radius: 50%;
-    width: 900px;
-    height: 900px;
-    position: absolute;
-    left: 44px;
-    top: 2124px;
-    opacity: 70%;
-  }
-  
-  
-  @keyframes flyAround-ellipse-5 {
-    0% {
-      transform: translate(0, 0);
-    }
-    25% {
-      transform: translate(850px, 250px);
-    }
-    50% {
-      transform: translate(550px, 950px);
-    }
-    80% {
-      transform: translate(-150px, 150px);
-    }
-    100% {
-      transform: translate(0, 0);
+  @media (min-width: 1760px) {
+    .hintergrundbild {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
     }
   }
-  
-  @keyframes flyAround-ellipse-7 {
-    0% {
-      transform: translate(0, 0);
-    }
-    25% {
-      transform: translate(-500px, 50px);
-    }
-    50% {
-      transform: translate(-300px, 250px);
-    }
-    75% {
-      transform: translate(100px, 150px);
-    }
-    100% {
-      transform: translate(0, 0);
-    }
-  }
-  
-  @keyframes flyAround-ellipse-4 {
-    0% {
-      transform: translate(0, 0);
-    }
-    25% {
-      transform: translate(350px, 0);
-    }
-    50% {
-      transform: translate(0, -100px);
-    }
-    75% {
-      transform: translate(-50px, 0);
-    }
-    100% {
-      transform: translate(0, 0);
-    }
-  }
-  
-  @keyframes flyAround-ellipse-9 {
-    0% {
-      transform: translate(0, 0);
-    }
-    25% {
-      transform: translate(-550px, -30px);
-    }
-    50% {
-      transform: translate(-650px, 300px);
-    }
-    75% {
-      transform: translate(-150px, 300px);
-    }
-    100% {
-      transform: translate(0, 0);
-    }
-  }
-  
-  @keyframes flyAround-ellipse-8 {
-    0% {
-      transform: translate(0, 0);
-    }
-    25% {
-      transform: translate(400px, 100px);
-    }
-    50% {
-      transform: translate(400px, -100px);
-    }
-    75% {
-      transform: translate(200px, 100px);
-    }
-    100% {
-      transform: translate(0, 0);
-    }
-  }
-
-
+ 
      .container-impressum, .container-datenschutz {
         width: 80%;
         margin: auto;
     }
-    
-    .impressum-content, .datenschutz-content {
-        padding: 20px;
+
+    @media (max-width: 592px) {
+      .container-datenschutz, .container-impressum{
+      width: 90%;
+      margin:auto
+      }
     }
-
-
+    
 
 /*_________________________________TEXTINHALT VON IMPRESSUM_______________________________*/
 .impressum-content, .datenschutz-content{
     padding: 20px;
 }
-
 .flex-firmagewissen {
     display: flex; /* Set the parent element as a flex container */
     align-items: flex-start;
@@ -277,24 +154,60 @@ p{
     margin-top: 32px;
     margin-left: 10px;
 }
+
+@media (max-width: 760px) {
+.gewissentext{
+  margin-top: 2px;
+}
+}
+
 .gewissenbild {
     width: 50px;
     height: 55px;
+    margin-top: 7px;
+}
+
+@media (max-width: 760px) {
+  .gewissenbild{
+    width: 30px;
+    height: auto;
+    margin-top: 0px;
+    margin-bottom: 2px;
+  }
 }
 
 .flex-impressum {
     display: flex; /* Set the parent element as a flex container */
     align-items: flex-start;
     width: 100%;
+}
 
-}
 .textimpressum {
-    flex: 0 0 80%;
-    margin: 10px 10px 10px 0px;
+    flex: 0 0 75%;
+    margin: 50px 10px 10px 0px;
 }
+
+@media (max-width: 785px) {
+  .textimpressum{
+  flex: 80%;
+  margin: 50px 0px 0px 0px;
+  }
+}
+
+@media (max-width: 484px) {
+  .textimpressum{
+  flex: 85%;
+  margin: 50px 0px 0px 0px;
+  }
+}
+
 .leerraumimpressum{
     display: flex;
     align-items: center;
+}
+
+.verantwortlich{
+  margin-bottom: 1%;
 }
 
 
@@ -303,4 +216,35 @@ p{
 
 .datenschutz {
   font-size: 5vw; /* Adjust as needed */
+}
+
+
+.flex-datenschutz {
+    display: flex; /* Set the parent element as a flex container */
+    align-items: flex-start;
+    width: 100%;
+}
+
+.textdatenschutz {
+    flex: 0 0 75%;
+    margin: 10px 10px 10px 0px;
+}
+
+@media (max-width: 785px) {
+  .textdatenschutz{
+  flex: 80%;
+  margin: 10px 0px 0px 0px;
+  }
+}
+
+@media (max-width: 484px) {
+  .textdatenschutz{
+  flex: 85%;
+  margin: 10px 0px 0px 0px;
+  }
+}
+
+.leerraumdatenschutz{
+    display: flex;
+    align-items: center;
 }
