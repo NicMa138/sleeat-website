@@ -47,6 +47,15 @@ p{
   margin-top: 1%;
 }
 
+.Kontakt{
+  color: #000000;
+  font-family: "Raleway-Medium", sans-serif;
+  font-size: min(max(15px, 2vw), 25px);
+  line-height: 110%;
+  font-weight: 500;
+margin: 1% 0px 1% 0px;
+}
+
 
 h5{
   color: #000000;
@@ -66,6 +75,16 @@ h5{
     line-height: 30px;
   }
   }
+
+h6 {
+    color: #1ab8a6;
+    text-decoration: underline;
+    font-family: "Raleway-Medium", sans-serif;
+    font-size: min(max(15px, 2vw), 25px);
+    line-height: 150%;
+    font-weight: 500;
+    margin: 1% 0px 1% 0px;
+}
 
 
 
