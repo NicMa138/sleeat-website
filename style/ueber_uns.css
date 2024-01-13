@@ -15,13 +15,22 @@
   background-attachment: fixed;
   opacity: 40%;
   z-index: -2;
-  background-repeat: repeat;
+}
+
+@media (min-width: 1760px) {
+  .hintergrundbild {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  
 }
 
 .koepfe {
   color: #1ab8a6;
   font-family: "Raleway-Bold", sans-serif;
-  font-size: 60px;
+  font-size: min(max(40px, 7vw), 60px);
   line-height: 70px;
   font-weight: 700;
   position: relative;
@@ -125,7 +134,7 @@
 .gruendungsgeschichte-span {
   color: #1ab8a6;
   font-family: "Raleway-Bold", sans-serif;
-  font-size: 60px;
+  font-size: min(max(40px, 7vw), 60px);
   line-height: 70px;
   font-weight: 700;
 }
@@ -133,7 +142,7 @@
 .gruendungsgeschichte-span2 {
   color: #000000;
   font-family: "Raleway-Medium", sans-serif;
-  font-size: 25px;
+  font-size: min(max(15px, 4vw), 25px);
   line-height: 40px;
   font-weight: 500;
 }
@@ -334,7 +343,7 @@ video {
   .koepfe {
     color: #1ab8a6;
     font-family: "Raleway-Bold", sans-serif;
-    font-size: 60px;
+    font-size: min(max(40px, 7vw), 60px);
     line-height: 70px;
     font-weight: 700;
     position: relative;
@@ -347,28 +356,11 @@ video {
   }
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 414px) {
   .koepfe {
     color: #1ab8a6;
     font-family: "Raleway-Bold", sans-serif;
-    font-size: 45px;
-    line-height: 70px;
-    font-weight: 700;
-    position: relative;
-    top: 40px;
-    width: 80%;
-    left: 10%;
-    height: 194px;
-    z-index: 2;
-    margin-bottom: 15vh;
-  }
-}
-
-@media screen and (max-width: 466px) {
-  .koepfe {
-    color: #1ab8a6;
-    font-family: "Raleway-Bold", sans-serif;
-    font-size: 45px;
+    font-size: min(max(40px, 7vw), 60px);
     line-height: 70px;
     font-weight: 700;
     position: relative;
@@ -381,11 +373,11 @@ video {
   }
 }
 
-@media screen and (max-width: 444px) {
+@media screen and (max-width: 395px) {
   .koepfe {
     color: #1ab8a6;
     font-family: "Raleway-Bold", sans-serif;
-    font-size: 45px;
+    font-size: min(max(40px, 7vw), 60px);
     line-height: 70px;
     font-weight: 700;
     position: relative;
@@ -402,8 +394,8 @@ video {
   .gruendungsgeschichte-span {
     color: #1ab8a6;
     font-family: "Raleway-Bold", sans-serif;
-    font-size: 45px;
-    line-height: 50px;
+    font-size: min(max(40px, 7vw), 60px);
+    line-height: 70px;
     font-weight: 700;
   }
 }
@@ -412,17 +404,17 @@ video {
   .gruendungsgeschichte-span {
     color: #1ab8a6;
     font-family: "Raleway-Bold", sans-serif;
-    font-size: 35px;
-    line-height: 35px;
+    font-size: min(max(40px, 7vw), 60px);
+    line-height: 50px;
     font-weight: 700;
   }
 }
 
-@media screen and (max-width: 444px) {
+@media screen and (max-width: 507px) {
   .gruendungsgeschichte-span {
     color: #1ab8a6;
     font-family: "Raleway-Bold", sans-serif;
-    font-size: 30px;
+    font-size: min(max(20px, 7vw), 60px);
     line-height: 25px;
     font-weight: 700;
   }
