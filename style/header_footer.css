@@ -18,42 +18,265 @@ main {
 /*Header styling*/
 
 header{
-    display: flex;
-    align-items: center;
-    background-color: #e2dede81;
+
+    background-color: rgb(136, 136, 136);
+    position: sticky;
+    top: 0;
+    left: 0;
+    opacity: 100%;
+    z-index: 200;
 
 }
 .logo{
-    
+    flex: 3;
     margin: 20px 10px 20px 20px;
+    width:"247px"; 
+    height: "80px";
  
+}
 
+
+.menueall{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: flex;
 }
 
 .menu{
-  display: flex;
-  justify-content: space-around;
-  flex: 1;
-    margin: 10px 20px 5px 5px; 
-  
-    align-items: center;
+  text-align: right;
+  flex: 3;
+  justify-content: right;
+  margin-right: 0%;
+  margin-left: 0%;
 }
+
+.menuealign{
+  flex:6;
+  text-align: center;
+  
+  
+}
+
+.menuealign2{
+  flex:4;
+  text-align: right;
+}
+
 .login{
-    margin: 10px 20px 0px 5px;
+  flex: 1;
+  text-align: center;
 }
 
 .menuebutton{
   background-color: #d6d0d081;
-  padding: 15px;
-  border-radius: 7px;
+  margin-top: 5px;
+  padding: 8px;
+  border-radius: 10px;
+  color: black;
+  
+
 }
 
-/*Alle im Menu*/
+.menuebutton a{
+margin-left: 0%;
+
+}
+
+.menuehover:hover {
+  transform: translate3d(0, 2px, 0);
+}
+
+.menuebutton:active {
+  background-color: aquamarine;
+}
+
+.menuealign a{
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 0%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.menuealign2 a{
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  align-items: end;
+  margin-right: 8%;
+}
+
 .menu a{
   color: black;
   font-size: 20px;
   font-weight: bold;
+  margin-left: 10%;
+  margin-right: 10%;
+
 }
+
+.loginimage{
+ margin-left: 25%;
+ margin-right: 20%;
+ width: 55px;
+ height: 55px;
+}
+
+.logoimage{
+  width: 60%;
+  height: 60%;
+}
+
+@media (max-width: 2000px) {
+
+  .loginimage{
+    width: 55px;
+    height: 55px;
+}
+}
+
+@media (max-width: 1600px) {
+
+  .menuealign a{
+    font-size: 23px;
+  }
+
+  .loginimage{
+    width: 50px;
+    height: 50px; }
+
+    .menu a{
+      font-size: 18px;
+      margin-left:0%;
+    }
+}
+
+@media (max-width: 1400px) {
+
+  .menuealign a{
+    font-size: 21px;
+  }
+  .loginimage{
+    width: 45px;
+    height: 45px; }
+
+    .menu a{
+      font-size: 17px;
+      margin-left:0%;
+    }
+}
+
+@media (max-width: 1200px) {
+
+  .menuealign a{
+    font-size: 19px;
+  }
+  .loginimage{
+    width: 40px;
+    height: 40px; }
+
+    .menu a{
+      font-size: 16px;
+      margin-left:0%;
+    }
+}
+
+@media (max-width: 1000px) {
+
+  .menuealign a{
+    font-size: 17px;
+  }
+  .loginimage{
+    width: 35px;
+    height: 35px; }
+
+    .menu a{
+      font-size: 15px;
+      margin-left:0%;
+    }
+}
+
+@media (max-width: 800px) {
+
+  .menuealign a{
+    font-size: 14px;
+    padding: 2%;
+  }
+
+  .loginimage{
+    width: 30px;
+    height: 30px; }
+
+    .menu a{
+      font-size: 13px;
+      margin-left:0%;
+      margin-right: 5%;
+    } 
+}
+
+@media (max-width: 600px) {
+
+  .menuealign a{
+    font-size: 11px;
+  }
+
+  .loginimage{
+    width: 25px;
+    height: 25px; }
+
+    .menu a{
+      font-size: 12px;
+      margin-left:0%;
+    } 
+} 
+
+@media (max-width: 500px) {
+
+  .menuealign a{
+    font-size: 10px;
+    padding: 1%;
+  }
+
+  .loginimage{
+    width: 18px;
+    height: 18px; }
+
+    .menu a{
+      font-size: 10px;
+      margin-left:0%;
+      margin-right: 3%;
+    } 
+}
+
+@media (max-width: 400px) {
+
+  .menuealign a{
+    font-size: 9px;
+    padding: 1%;
+  }
+
+  .loginimage{
+    width: 14px;
+    height: 14px; 
+    margin-right: 0%;
+  }
+
+    .menu a{
+      font-size: 8px;
+      margin-left:0%;
+      margin-right: 3%;
+    } 
+}
+
+
+
+
+
+
 
 /*******************************************************/
 /*Footer styling*/
@@ -65,7 +288,8 @@ footer {
       padding: 20px;
       display: flex;
       justify-content: space-between;
-    text-align: center;
+      text-align: center;
+      
 
     }
 
@@ -86,3 +310,77 @@ a {
       color: rgb(255, 255, 255);
       text-decoration: none;
     }
+
+
+    @media (max-width: 800px) {
+      .column.left {
+        font-size: 90%;
+      }
+      .column {
+        font-size: 90%;
+      }
+      .column.right {
+        font-size: 90%;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .column.left {
+        font-size: 80%;
+      }
+      .column {
+        font-size: 80%;
+      }
+      .column.right {
+        font-size: 80%;
+      }
+    }
+
+@media (max-width: 610px) {
+  .column.left {
+    font-size: 70%;
+  }
+  .column {
+    font-size: 70%;
+  }
+  .column.right {
+    font-size: 70%;
+  }
+}
+
+@media (max-width: 538px) {
+  .column.left {
+    font-size: 60%;
+  }
+  .column {
+    font-size: 60%;
+  }
+  .column.right {
+    font-size: 60%;
+  }
+}
+
+@media (max-width: 466px) {
+  .column.left {
+    font-size: 50%;
+  }
+  .column {
+    font-size: 50%;
+  }
+  .column.right {
+    font-size: 50%;
+  }
+} 
+@media (max-width: 300px) {
+  .column.left {
+    font-size: 40%;
+  }
+  .column {
+    font-size: 40%;
+  }
+  .column.right {
+    font-size: 40%;
+  }
+} 
+
+    
