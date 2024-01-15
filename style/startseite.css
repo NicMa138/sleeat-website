@@ -32,9 +32,6 @@ body {
     padding: 0px;
     margin-right: 50px;
     margin-left: 300px;
-
-
-
 }
 
 .bold-text-türkis-kreis {
@@ -73,8 +70,6 @@ body {
     margin-right: 600px;
 
 }
-
-
 
 .button {
     width: 160px;
@@ -195,66 +190,7 @@ body {
     }
 }
 
-@media screen and (max-width: 1024px) {
 
-    .ellipse-1 {
-        width: 700px;
-        height: 700px;
-        position: absolute;
-        left: 90%;
-        top: 1000px;
-    }
-
-    .ellipse-2 {
-        width: 700px;
-        height: 700px;
-        position: absolute;
-        left: 20%;
-        top: 450px;
-    }
-
-    .Zitat-container {
-        margin-top: 30%;
-        width: 932px;
-        font-size: 25px;
-        margin-left: 69px;
-    }
-
-    .bold-text-türkis-kreis {
-        margin-top: 200px;
-        margin-left: 200px;
-        margin-right: 0px;
-        font-size: 25px;
-        width: 463px;
-    }
-
-    .bold-türkis-text {
-        top: 80%;
-        font-size: 60px;
-        margin-left: 365px;
-    }
-
-    .bold-text-weiss-kreis {
-        margin-top: 493px;
-        margin-left: 472px;
-        width: 485px;
-        font-size: 30px;
-    }
-
-    .button {
-        margin-left: 619px;
-        margin-top: 81px;
-        width: 300px;
-        height: 80px;
-        font-size: 50px;
-    }
-
-
-
-
-
-
-}
 
 footer {
 
