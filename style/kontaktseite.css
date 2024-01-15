@@ -233,7 +233,7 @@ input[type="text"] {
 
 }
 
-button:active {
+.buttonweiter:active {
     background-color: aquamarine;
 }
 
