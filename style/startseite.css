@@ -88,8 +88,17 @@ body {
     /*Bold*/
     font-size: 24px;
     text-align: center;
-
 }
+
+    .button-size:hover {
+        transform: translate3d(0, 2px, 0);
+      }
+      
+      .button-size :active {
+        background-color: aquamarine;
+      }
+
+
 
 
 /*******************************************************/
