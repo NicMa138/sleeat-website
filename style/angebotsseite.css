@@ -6,19 +6,20 @@ body {
 
 .container {
 
-   font-size: 200%;
+    font-size: 2em
     max-width: 1200px;
     margin: min(10%, 10px) auto;
     padding: 30px;
     text-align: center;
     line-height: 2;
-    font-size:min(max(18px,3vw),30px);
+    font-size:min(max(10px,3vw),30px);
 }
 
 .textfelder {
     display: flex;
     line-height: 2;
     margin-bottom: 20px;
+    font-size:min(max(10px,3vw),25px);
 
 }
 
@@ -31,7 +32,6 @@ body {
 
 .form-container {
     font-family: 'Railway', Arial, sans-serif;
-    font-size: 120%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -44,6 +44,7 @@ body {
     line-height: 3;
     background-color:rgba(49, 80, 60, 0.41);
     grid-template-columns: repeat(1, 1fr)
+
 }
 
 
@@ -51,6 +52,8 @@ body {
     text-align: left;
     display: flex;
     flex-wrap: wrap;
+    font-size:min(max(10px,3vw),25px);
+
 }
 
 .checkbox-group div {
@@ -61,11 +64,13 @@ margin-right: 15px;
 input[type="text"]{
     font-size: 15px;
     padding: 8px;
+    width: 15vw;
   }
 
 input[type="date"]{
     font-size:15px;
     padding: 8px;
+    width: 15vw;
   }
 
 .maincontainer {
@@ -142,6 +147,7 @@ menu {
   h5 {
     font-family: CerebriSans-Bold, -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
     font-weight: 400;
+    font-size:min(max(18px,3vw),25px);
   }
   
   .svg-inline--fa {
