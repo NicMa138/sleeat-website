@@ -1,0 +1,248 @@
+
+
+
+.maincontainer {
+    
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: max-content;
+    height: 100%;
+    position: relative;
+}
+
+
+.hintergrundbild {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: repeat center center fixed;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 40%;
+    z-index: -2;
+  }
+
+  h1 {
+    color: #1ab8a6;
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 700;
+    top: 10px;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin-top: 300px;
+    text-align: center;
+    width: 90%;
+    line-height: min(max(20px, 6vw), 60px);
+    font-size: min(max(20px, 6vw), 60px);
+    margin-top: min(max(50px, 4vw), 300px);
+    margin-bottom: min(max(10px, 4vw), 70px);
+
+}
+
+
+.button{
+
+    color: #000000;
+    font-family: "Raleway-Medium", sans-serif;
+    font-size: 25px;
+    line-height: 40px;
+    font-weight: 700;
+    line-height: 30px;
+    margin-top: 70px;
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: min(max(5px, 3vw), 25px);
+    margin-top: min(max(5px, 3vw), 70px);
+
+}
+
+
+
+.ellipse-5 {
+    background: rgba(26, 184, 166, 0.3);
+    border-radius: 50%;
+    width: 471px;
+    height: 471px;
+    position: absolute;
+    left: calc(10%);
+    top: 182px;
+    opacity: 50%;
+  }
+  
+  .ellipse-7 {
+    background: rgba(217, 217, 217, 0.7);
+    border-radius: 50%;
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    left: calc(62%);
+    top: 1573px;
+    opacity: 70%;
+  }
+  
+  .ellipse-4 {
+    background: rgba(217, 217, 217, 0.7);
+    border-radius: 50%;
+    width: 750px;
+    height: 750px;
+    position: absolute;
+    left: calc(3%);
+    top: 439px;
+    opacity: 70%;
+  }
+  
+  .ellipse-9 {
+    background: rgba(26, 184, 166, 0.25);
+    border-radius: 50%;
+    width: 700px;
+    height: 678px;
+    position: absolute;
+    left: calc(40%);
+    top: 1040px;
+    opacity: 50%;
+  }
+  
+  .ellipse-8 {
+    background: rgba(26, 184, 166, 0.25);
+    border-radius: 50%;
+    width: 900px;
+    height: 900px;
+    position: absolute;
+    left: calc(8%);
+    top: 1824px;
+    opacity: 50%;
+  }
+  
+  .ellipse-5,
+  .ellipse-7,
+  .ellipse-4,
+  .ellipse-9,
+  .ellipse-8 {
+    z-index: -1;  
+    overflow:auto;
+  }
+  
+  
+  .ellipse-5 {
+      animation: flyAround-ellipse-5 75s infinite 0s;
+  }
+  
+  .ellipse-7 {
+    animation: flyAround-ellipse-7 40s infinite 0s;
+  }
+  
+  .ellipse-4 {
+    animation: flyAround-ellipse-4 140s infinite 0s;
+  }
+  
+  .ellipse-9 {
+    animation: flyAround-ellipse-9 90s infinite 0s;
+  }
+  
+  .ellipse-8 {
+    animation: flyAround-ellipse-8 50s infinite 0s;
+  }
+  
+  
+  
+  
+  @keyframes flyAround-ellipse-5 {
+    0% {
+      transform: translate(0%, 0%);
+    }
+    25% {
+      transform: translate(150%, 25%);
+    }
+    50% {
+      transform: translate(70%, 95%);
+    }
+    80% {
+      transform: translate(-15%, 15%);
+    }
+    100% {
+      transform: translate(0%, 0%);
+    }
+  }
+  
+  @keyframes flyAround-ellipse-7 {
+    0% {
+      transform: translate(0%, 0%);
+    }
+    25% {
+      transform: translate(-50%, 5%);
+    }
+    50% {
+      transform: translate(-30%, 25%);
+    }
+    75% {
+      transform: translate(10%, 15%);
+    }
+    100% {
+      transform: translate(0%, 0%);
+    }
+  }
+  
+  @keyframes flyAround-ellipse-4 {
+    0% {
+      transform: translate(0%, 0%);
+    }
+    25% {
+      transform: translate(35%, 0%);
+    }
+    50% {
+      transform: translate(0%, -10%);
+    }
+    75% {
+      transform: translate(-5%, 0%);
+    }
+    100% {
+      transform: translate(0%, 0%);
+    }
+  }
+  
+  @keyframes flyAround-ellipse-9 {
+    0% {
+      transform: translate(0%, 0%);
+    }
+    25% {
+      transform: translate(-45%, -3%);
+    }
+    50% {
+      transform: translate(-55%, 30%);
+    }
+    75% {
+      transform: translate(-15%, 30%);
+    }
+    100% {
+      transform: translate(0%, 0%);
+    }
+  }
+  
+  @keyframes flyAround-ellipse-8 {
+    0% {
+      transform: translate(0%, 0%);
+    }
+    25% {
+      transform: translate(35%, 10%);
+    }
+    50% {
+      transform: translate(35%, -10%);
+    }
+    75% {
+      transform: translate(20%, 10%);
+    }
+    100% {
+      transform: translate(0%, 0%);
+    }
+  }
