@@ -9,16 +9,7 @@ body {
     font-family: "Raleway-Bold", sans-serif;
 }
 
-.textbox {
-    color: black;
-    font-size: 25px;
-    width: 65%;
-    padding-top: 20px;
-    padding-bottom: 100px;
-    padding-left: 35px;
-    padding-right: 35px;
-    text-align: center;
-}
+
 
 
 h1 {
@@ -27,17 +18,20 @@ h1 {
     line-height: 70px;
     font-weight: 700;
     top: 10px;
-    margin-bottom: 5vh;
+    margin-bottom: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: min(max(40px, 7vw), 60px);
     padding-top: 30px;
     padding-bottom: 20px;
     margin-top: 80px;
     text-align: center;
     width: 90%;
-    line-height: min(max(40px, 7vw), 60px);
+    line-height: min(max(20px, 6vw), 60px);
+    font-size: min(max(20px, 6vw), 60px);
+    margin-top: min(max(10px, 4vw), 80px);
+    margin-bottom: min(max(10px, 4vw), 70px);
+
 }
 
 h2 {
@@ -50,8 +44,13 @@ h2 {
     justify-content: center;
     align-items: center;
     margin-bottom: 0;
-    margin-top: 80px;
-
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 80px; 
+    line-height: min(max(20px, 6vw), 60px);
+    font-size: min(max(20px, 6vw), 60px);
+    margin-top: min(max(50px, 4vw), 80px);
+  
 }
 
 .textfragen {
@@ -63,6 +62,11 @@ h2 {
     line-height: 30px;
     margin-top: 70px;
     text-align: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    line-height: min(max(5px, 4vw), 25px);
+    font-size: min(max(5px, 4vw), 25px);
+    margin-top: min(max(5px, 4vw), 70px);
 }
 
 .texttext {
@@ -73,6 +77,11 @@ h2 {
     font-weight: 500;
     margin-top: 20px;
     text-align: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    line-height: min(max(5px, 4vw), 25px);
+    font-size: min(max(5px, 4vw), 25px);
+    margin-top: min(max(5px, 4vw), 20px);
 }
 
 .maincontainer {
@@ -144,6 +153,8 @@ label {
     margin-bottom: 5px;
     font-weight: bold;
     color: #333;
+    line-height: min(max(7px, 2vw), 25px);
+    font-size: min(max(7px, 2vw), 25px);
 }
 
 
@@ -168,6 +179,7 @@ input[type="text"] {
 
 .last {
     margin-bottom: 100px;
+    margin-bottom: min(max(50px, 4vw), 100px);
 }
 
 .checkbox-group {
@@ -213,12 +225,15 @@ input[type="text"] {
     box-sizing: border-box;
     color: #41403e;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 15px;
     line-height: 23px;
     border-radius: 4px;
+    line-height: min(max(5px, 2vw), 15px);
+    font-size: min(max(5px, 2vw), 15px);
+
 }
 
-button:active {
+.buttonweiter:active {
     background-color: aquamarine;
 }
 
@@ -247,6 +262,10 @@ button:active {
     line-height: 30px;
     margin-top: 70px;
     text-align: center;
+    line-height: min(max(20px, 4vw), 25px);
+    font-size: min(max(20px, 4vw), 25px);
+    margin-top: min(max(30px, 3vw), 70px);
+    margin-bottom: min(max(5px, 3vw), 25px);
 }
 
 .textname {
@@ -257,7 +276,37 @@ button:active {
     font-weight: 500;
     margin-top: 20px;
     text-align: center;
+    line-height: min(max(20px, 3vw), 25px);
+    font-size: min(max(20px, 3vw), 40px);
+    margin-top: min(max(10px, 3vw), 20px);
+    margin-bottom: min(max(10px, 3vw), 25px);
 }
+
+.textname p{
+
+  line-height: min(max(20px, 4vw), 25px);
+  font-size: min(max(20px, 4vw), 25px);
+  margin-top: min(max(5px, 3vw), 10px);
+  margin-bottom: min(max(5px, 3vw), 10px);
+
+}
+
+
+
+.textbox {
+  color: black;
+  font-size: 25px;
+  width: 65%;
+  padding-top: 20px;
+  padding-bottom: 100px;
+  padding-left: 35px;
+  padding-right: 35px;
+  text-align: center;
+  line-height: min(max(5px, 4vw), 25px);
+  font-size: min(max(5px, 4vw), 25px);
+  padding-bottom: min(max(30px, 4vw), 100px);
+}
+
 
 .card-holders {
     display: flex;
@@ -525,61 +574,10 @@ button:active {
 
 
 
-@media all and (min-width: 300px) {
-    label {
-        display: block;
-        margin-bottom: 5px;
-        font-weight: bold;
-        color: #333;
-        font-size: 16px;
-    }
-
-}
 
 
 
 
-
-@media all and (max-width: 631px) {
-    label {
-        font-size: 8px;
-    }
-}
-
-
-
-
-@media all and (min-width: 300px) {
-    h2{
-        color: black;
-        font-size: 40px;
-        line-height: 70px;
-        font-weight: 700;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        margin-bottom: 0;
-        margin-top: 80px;
-        text-align: center;
-      }
-    }
-
-@media all and (min-width: 900px) {
-h2{
-    color: black;
-    font-size: 60px;
-    line-height: 70px;
-    font-weight: 700;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 0;
-    margin-top: 80px;
-}
-}
 
 @media all and (min-width: 300px) {
     .card-holders>.card1 {

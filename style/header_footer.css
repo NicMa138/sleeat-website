@@ -28,11 +28,17 @@ header{
 
 }
 .logo{
-    flex: 3;
-    margin: 20px 10px 20px 20px;
-    width:"247px"; 
-    height: "80px";
+    flex: 2.8;
+  margin-top: 1%;
+  margin-left: 1%;
  
+}
+
+.login{
+    flex: 1;
+    height: flex;
+    
+
 }
 
 
@@ -45,23 +51,33 @@ header{
 
 .menu{
   text-align: right;
-  flex: 3;
+  flex: 1;
   justify-content: right;
   margin-right: 0%;
   margin-left: 0%;
+  font-size: min(max(15px, 1vw), 20px);
+  
+  
+}
+
+.menue2{
+  text-align: right;
+  flex: 1;
+  justify-content: right;
+  margin-right: 0%;
+  margin-left: 0%;
+  font-size: min(max(15px, 1vw), 20px);
 }
 
 .menuealign{
-  flex:6;
+  flex:3;
   text-align: center;
+  font-size: min(max(15px, 1vw), 25px);
   
   
 }
 
-.menuealign2{
-  flex:4;
-  text-align: right;
-}
+
 
 .login{
   flex: 1;
@@ -70,16 +86,20 @@ header{
 
 .menuebutton{
   background-color: #d6d0d081;
+  font-size: 25px;
   margin-top: 5px;
-  padding: 8px;
+  padding: 1%;
   border-radius: 10px;
   color: black;
-  
-
+ 
 }
 
-.menuebutton a{
-margin-left: 0%;
+
+
+.menuehover{
+
+line-height: 47px;
+line-height: min(max(20px, 4vw), 47px);
 
 }
 
@@ -99,6 +119,8 @@ margin-left: 0%;
   margin: 0%;
   margin-top: 10%;
   margin-bottom: 10%;
+  font-size: min(max(10px, 2vw), 25px);
+
 }
 
 .menuealign2 a{
@@ -110,20 +132,32 @@ margin-left: 0%;
   margin-right: 8%;
 }
 
+.menuetext{
+  font-size: min(max(10px, 2vw), 20px);
+}
+
+
 .menu a{
   color: black;
   font-size: 20px;
   font-weight: bold;
-  margin-left: 10%;
-  margin-right: 10%;
+  font-size: min(max(5px, 2vw), 20px);
+
+}
+
+.menue2 a{
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  font-size: min(max(5px, 2vw), 20px);
 
 }
 
 .loginimage{
- margin-left: 25%;
- margin-right: 20%;
  width: 55px;
  height: 55px;
+ height: min(max(10px, 4vw), 55px);
+ width: min(max(10px, 4vw), 55px);
 }
 
 .logoimage{
@@ -131,146 +165,6 @@ margin-left: 0%;
   height: 60%;
 }
 
-@media (max-width: 2000px) {
-
-  .loginimage{
-    width: 55px;
-    height: 55px;
-}
-}
-
-@media (max-width: 1600px) {
-
-  .menuealign a{
-    font-size: 23px;
-  }
-
-  .loginimage{
-    width: 50px;
-    height: 50px; }
-
-    .menu a{
-      font-size: 18px;
-      margin-left:0%;
-    }
-}
-
-@media (max-width: 1400px) {
-
-  .menuealign a{
-    font-size: 21px;
-  }
-  .loginimage{
-    width: 45px;
-    height: 45px; }
-
-    .menu a{
-      font-size: 17px;
-      margin-left:0%;
-    }
-}
-
-@media (max-width: 1200px) {
-
-  .menuealign a{
-    font-size: 19px;
-  }
-  .loginimage{
-    width: 40px;
-    height: 40px; }
-
-    .menu a{
-      font-size: 16px;
-      margin-left:0%;
-    }
-}
-
-@media (max-width: 1000px) {
-
-  .menuealign a{
-    font-size: 17px;
-  }
-  .loginimage{
-    width: 35px;
-    height: 35px; }
-
-    .menu a{
-      font-size: 15px;
-      margin-left:0%;
-    }
-}
-
-@media (max-width: 800px) {
-
-  .menuealign a{
-    font-size: 14px;
-    padding: 2%;
-  }
-
-  .loginimage{
-    width: 30px;
-    height: 30px; }
-
-    .menu a{
-      font-size: 13px;
-      margin-left:0%;
-      margin-right: 5%;
-    } 
-}
-
-@media (max-width: 600px) {
-
-  .menuealign a{
-    font-size: 11px;
-  }
-
-  .loginimage{
-    width: 25px;
-    height: 25px; }
-
-    .menu a{
-      font-size: 12px;
-      margin-left:0%;
-    } 
-} 
-
-@media (max-width: 500px) {
-
-  .menuealign a{
-    font-size: 10px;
-    padding: 1%;
-  }
-
-  .loginimage{
-    width: 18px;
-    height: 18px; }
-
-    .menu a{
-      font-size: 10px;
-      margin-left:0%;
-      margin-right: 3%;
-    } 
-}
-
-@media (max-width: 400px) {
-
-  .menuealign a{
-    font-size: 9px;
-    padding: 1%;
-  }
-
-  .loginimage{
-    width: 14px;
-    height: 14px; 
-    margin-right: 0%;
-  }
-
-    .menu a{
-      font-size: 8px;
-      margin-left:0%;
-      margin-right: 3%;
-    } 
-}
 
 
 

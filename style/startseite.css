@@ -1,43 +1,43 @@
-body{
+body {
     display: flexbox;
     background-size: 100%;
     margin-bottom: 10px;
-    background-position: center;  
-} 
+    background-position: center;
+}
 
 /* h1,h2 und h3 gelöscht*/
 
-.hintergrundbild{
+.hintergrundbild {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: url(/image/Startseite_Hintergrund.jpg) no-repeat center center fixed; /*Bild gewechslet*/
+    background: url(/image/Startseite_Hintergrund.jpg) no-repeat center center fixed;
+    /*Bild gewechslet*/
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-attachment: fixed;
-    opacity: 0.4; /* 40% opacity */
+    opacity: 0.4;
+    /* 40% opacity */
     z-index: -2;
 }
 
-.Zitat-container{
-    font-family:'Raleway',sans-serif;
+.Zitat-container {
+    font-family: 'Raleway', sans-serif;
     font-style: italic;
-    text-align: right; 
-    padding:0px;  
+    text-align: right;
+    padding: 0px;
     margin-right: 50px;
     margin-left: 300px;
-    
-    
-   
 }
 
-.bold-text-türkis-kreis{
-    font-family:'Raleway';
-    font-weight: 700; /*Bold*/
+.bold-text-türkis-kreis {
+    font-family: 'Raleway';
+    font-weight: 700;
+    /*Bold*/
     text-align: left;
     margin-top: 90px;
     margin-left: 350px;
@@ -45,9 +45,10 @@ body{
 
 }
 
-.bold-text-weiss-kreis{
-    font-family:'Raleway';
-    font-weight: 700; /*Bold*/
+.bold-text-weiss-kreis {
+    font-family: 'Raleway';
+    font-weight: 700;
+    /*Bold*/
     font-size: 18px;
     text-align: left;
     margin-top: 30px;
@@ -56,9 +57,10 @@ body{
 
 }
 
-.bold-türkis-text{
-    font-family:'Raleway';
-    font-weight: 700; /*Bold*/
+.bold-türkis-text {
+    font-family: 'Raleway';
+    font-weight: 700;
+    /*Bold*/
     color: darkcyan;
     font-size: 40px;
     position: absolute;
@@ -66,16 +68,14 @@ body{
     text-align: left;
     margin-left: 470px;
     margin-right: 600px;
-    
+
 }
 
-
-
-.button{
+.button {
     width: 160px;
     height: 40px;
     background-color: rgb(154, 147, 147);
-    border: 2px solid #000 ;
+    border: 2px solid #000;
     border-radius: 40px;
     display: flex;
     justify-content: center;
@@ -83,31 +83,40 @@ body{
     margin-left: 950px;
     margin-right: 230px;
     margin-top: 2%;
-    font-family:'Raleway';
-    font-weight: 700;/*Bold*/
+    font-family: 'Raleway';
+    font-weight: 700;
+    /*Bold*/
     font-size: 24px;
     text-align: center;
-
 }
+
+    .button-size:hover {
+        transform: translate3d(0, 2px, 0);
+      }
+      
+      .button-size :active {
+        background-color: aquamarine;
+      }
+
+
 
 
 /*******************************************************/
 /*Header styling*/
 
-.logo{
+.logo {
     flex: 1;
     margin: 20px 20px 0px 20px;
-    
+
 }
 
-.menu{
-    margin: 10px 20px 5px 5px; 
+.menu {
+    margin: 10px 20px 5px 5px;
 }
-.login{
+
+.login {
     margin: 10px 20px 0px 5px;
 }
-
-
 
 
 .ellipse-1 {
@@ -130,10 +139,306 @@ body{
     height: 470px;
     position: absolute;
     left: 48%;
-    top: 320px;
+    top: 300px;
     opacity: 100%;
     overflow: hidden;
     z-index: -1;
+}
+
+
+@media  screen and (max-width: 1340px) {
+    .bold-text-türkis-kreis {
+        margin-left: 314px;
+        width: 380px;   
+    }
+
+    .bold-türkis-text {
+        top: 40%;
+        margin-left: 412px
+    }
+
+    .bold-text-weiss-kreis{
+        margin-top: 15px;
+        margin-left: 698px;
+        width: 358px;
+        font-size: 14px;
+    }   
+    
+    .button {
+        margin-left: 778px;
+        margin-top: 73px;
+        width: 230px;
+        height: 55px;
+        font-size: 35px;
+    
+    }
+}
+
+@media  screen and (max-width: 1275px) {
+  
+    .bold-text-weiss-kreis{
+        margin-left: 677px;
+    }   
+    
+}
+
+@media  screen and (max-width: 1120px) {
+    .bold-text-türkis-kreis {
+        margin-left: 280px; 
+    }
+
+    .bold-türkis-text {
+        margin-left: 320px
+    }
+
+    .bold-text-weiss-kreis{
+        margin-left: 596px;
+        
+    }   
+    
+    .button {
+        margin-left: 678px;
+    
+    }
+}
+
+@media  screen and (max-width: 1095px) {
+    .bold-text-türkis-kreis {
+        margin-top: 46px;
+        margin-left: 280px; 
+    }
+
+    .bold-türkis-text {
+        margin-top: 17px;
+        margin-left: 320px
+    }
+
+    .bold-text-weiss-kreis{
+        margin-left: 586px;
+        
+    }   
+    
+    .button {
+        margin-top: 50px;
+    
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .ellipse-1 {
+        width: 380px;
+        height: 380px;
+        position: absolute;
+        left: 15%;
+        top: 170px;
+    }
+
+    .ellipse-2 {
+        width: 380px;
+        height: 380px;
+        position: absolute;
+        left: 47%;
+        top: 230px;
+    }
+
+    .Zitat-container {
+        width: 573px;
+        font-size: 15px;
+        margin-left: 420px;
+    }
+
+    .bold-text-türkis-kreis {
+        margin-top: 40px;
+        margin-left: 196px;
+        margin-right: 0px;
+        font-size: 12px;
+        width: 287px;
+    }
+
+    .bold-türkis-text {
+        top: 40%;
+        font-size: 30px;
+        margin-left: 306px;
+    }
+
+    .bold-text-weiss-kreis {
+        margin-top: -19px;
+        margin-left: 523px;
+        width: 321px;
+        font-size: 12px;
+    }
+
+    .button {
+        margin-left: 595px;
+        margin-top: 54px;
+        width: 164px;
+        height: 37px;
+        font-size: 25px;
+    }
+}
+
+
+@media screen and (max-width: 940px) {
+    .ellipse-1 {
+        width: 400px;
+        height: 400px;
+        position: absolute;
+        left: 10%;
+        top: 180px;
+    }
+
+    .ellipse-2 {
+        width: 400px;
+        height: 400px;
+        position: absolute;
+        left: 50%;
+        top: 220px;
+    }
+
+    .Zitat-container {
+        width: 573px;
+        font-size: 15px;
+        margin-left: 325px;
+    }
+
+    .bold-text-türkis-kreis {
+        margin-top: 40px;
+        margin-left: 140px;
+        margin-right: 0px;
+        font-size: 12px;
+        width: 287px;
+    }
+
+    .bold-türkis-text {
+        top: 40%;
+        margin-left: 256px;
+    }
+
+    .bold-text-weiss-kreis {
+        margin-top: -19px;
+        margin-left: 500px;
+        width: 321px;
+        font-size: 12px;
+    }
+
+    .button {
+        margin-left: 595px;
+        margin-top: 54px;
+        width: 164px;
+        height: 37px;
+        font-size: 25px;
+    }
+}
+
+
+@media screen and (max-width: 740px) {
+    .ellipse-1 {
+        width: 700px;
+        height: 700px;
+        position: absolute;
+        left: 5%;
+        top: 296px;
+    }
+
+    .ellipse-2 {
+        width: 700px;
+        height: 700px;
+        position: absolute;
+        left: 80%;
+        top: 669px;
+    }
+
+    .Zitat-container {
+        margin-top: 0%;
+        width: 965px;
+        font-size: 25px;
+        margin-left: 271px;
+    }
+
+    .bold-text-türkis-kreis {
+        margin-top: 112px;
+        margin-left: 143px;
+        margin-right: 0px;
+        font-size: 25px;
+        width: 463px;
+    }
+
+    .bold-türkis-text {
+        top: 60%;
+        font-size: 60px;
+        margin-left: 279px;
+    }
+
+    .bold-text-weiss-kreis {
+        margin-top: 278px;
+        margin-left: 690px;
+        width: 485px;
+        font-size: 25px;
+    }
+
+    .button {
+        margin-left: 808px;
+        margin-top: 86px;
+        width: 300px;
+        height: 80px;
+        font-size: 50px;
+    }
+}
+
+
+
+@media screen and (max-width: 450px) {
+    .ellipse-1 {
+        width: 700px;
+        height: 700px;
+        position: absolute;
+        left: 20%;
+        top: 450px;
+    }
+
+    .ellipse-2 {
+        width: 700px;
+        height: 700px;
+        position: absolute;
+        left: 90%;
+        top: 1000px;
+    }
+
+    .Zitat-container {
+        margin-top: 30%;
+        width: 932px;
+        font-size: 25px;
+        margin-left: 69px;
+    }
+
+    .bold-text-türkis-kreis {
+        margin-top: 200px;
+        margin-left: 200px;
+        margin-right: 0px;
+        font-size: 25px;
+        width: 463px;
+    }
+
+    .bold-türkis-text {
+        top: 80%;
+        font-size: 60px;
+        margin-left: 365px;
+    }
+
+    .bold-text-weiss-kreis {
+        margin-top: 493px;
+        margin-left: 472px;
+        width: 485px;
+        font-size: 30px;
+    }
+
+    .button {
+        margin-left: 600px;
+        margin-top: 51px;
+        width: 300px;
+        height: 80px;
+        font-size: 50px;
+    }
 }
 
 
@@ -149,4 +454,4 @@ footer {
     left: 0%;
     right: 0%;
     position: fixed;
-  }
+}
