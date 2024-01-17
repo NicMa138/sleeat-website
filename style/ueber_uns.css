@@ -27,6 +27,14 @@
   
 }
 
+@media (min-width: 1760px) {
+  .hintergrundbild {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
 .koepfe {
   color: #1ab8a6;
   font-family: "Raleway-Bold", sans-serif;
