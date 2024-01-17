@@ -1,0 +1,262 @@
+@media  screen and (max-width: 1340px) {
+    .container-türkis-kreis {
+        margin-left: 314px;
+        width: 380px;   
+    }
+
+    .container-türkis-text {
+        top: 40%;
+        margin-left: 412px
+    }
+
+    .container-text-weiss-kreis{
+        margin-top: 15px;
+        margin-left: 698px;
+        width: 358px;
+        font-size: 14px;
+    }   
+    
+    
+}
+
+@media  screen and (max-width: 1275px) {
+  
+    .container-text-weiss-kreis{
+        margin-left: 677px;
+    }   
+    
+}
+
+@media  screen and (max-width: 1120px) {
+    .container-text-türkis-kreis {
+        margin-left: 280px; 
+    }
+
+    .container-türkis-text {
+        margin-left: 320px
+    }
+
+    .container-text-weiss-kreis{
+        margin-left: 596px;
+        
+    }   
+    
+   
+}
+
+@media  screen and (max-width: 1095px) {
+    .container-text-türkis-kreis {
+        margin-top: 46px;
+        margin-left: 280px; 
+    }
+
+    .container-türkis-text {
+        margin-top: 17px;
+        margin-left: 320px
+    }
+
+    .container-text-weiss-kreis{
+        margin-left: 586px;
+        
+    }   
+    
+    
+}
+
+@media screen and (max-width: 1024px) {
+    .ellipse-1 {
+        width: 380px;
+        height: 380px;
+        position: absolute;
+        left: 15%;
+        top: 170px;
+    }
+
+    .ellipse-2 {
+        width: 380px;
+        height: 380px;
+        position: absolute;
+        left: 47%;
+        top: 230px;
+    }
+
+
+
+    .container-türkis-kreis {
+        margin-top: 40px;
+        margin-left: 196px;
+        margin-right: 0px;
+        font-size: 12px;
+        width: 287px;
+    }
+
+    .container-türkis-text {
+        top: 40%;
+        font-size: 30px;
+        margin-left: 306px;
+    }
+
+    .container-weiss-kreis {
+        margin-top: -19px;
+        margin-left: 523px;
+        width: 321px;
+        font-size: 12px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 940px) {
+    .ellipse-1 {
+        width: 400px;
+        height: 400px;
+        position: absolute;
+        left: 10%;
+        top: 180px;
+    }
+
+    .ellipse-2 {
+        width: 400px;
+        height: 400px;
+        position: absolute;
+        left: 50%;
+        top: 220px;
+    }
+
+   
+
+    .container-türkis-kreis {
+        margin-top: 40px;
+        margin-left: 140px;
+        margin-right: 0px;
+        font-size: 12px;
+        width: 287px;
+    }
+
+    .container-text {
+        top: 40%;
+        margin-left: 256px;
+    }
+
+    .container-weiss-kreis {
+        margin-top: -19px;
+        margin-left: 500px;
+        width: 321px;
+        font-size: 12px;
+    }
+
+    
+}
+
+
+@media screen and (max-width: 740px) {
+    .ellipse-1 {
+        width: 700px;
+        height: 700px;
+        position: absolute;
+        left: 5%;
+        top: 296px;
+    }
+
+    .ellipse-2 {
+        width: 700px;
+        height: 700px;
+        position: absolute;
+        left: 80%;
+        top: 669px;
+    }
+
+}
+
+    .container-türkis-kreis {
+        margin-top: 112px;
+        margin-left: 143px;
+        margin-right: 0px;
+        font-size: 25px;
+        width: 463px;
+    }
+
+    .container-türkis-text {
+        top: 60%;
+        font-size: 60px;
+        margin-left: 279px;
+    }
+
+    .container-weiss-kreis {
+        margin-top: 278px;
+        margin-left: 690px;
+        width: 485px;
+        font-size: 25px;
+    }
+
+   
+
+
+
+@media screen and (max-width: 450px) {
+    .ellipse-1 {
+        width: 700px;
+        height: 700px;
+        position: absolute;
+        left: 20%;
+        top: 450px;
+    }
+
+    .ellipse-2 {
+        width: 700px;
+        height: 700px;
+        position: absolute;
+        left: 90%;
+        top: 1000px;
+    }
+
+
+    .container-türkis-kreis {
+        margin-top: 200px;
+        margin-left: 200px;
+        margin-right: 0px;
+        font-size: 25px;
+        width: 463px;
+    }
+
+    .container-türkis-text {
+        top: 80%;
+        font-size: 60px;
+        margin-left: 365px;
+    }
+
+    .container-weiss-kreis {
+        margin-top: 493px;
+        margin-left: 472px;
+        width: 485px;
+        font-size: 30px;
+    }
+
+    
+}
+
+
+
+
+
+
+.button{
+    background-color: #d6d0d081;
+    font-size: 25px;
+    margin-top: 5px;
+    padding: 1%;
+    border-radius: 10px;
+    color: black;
+   
+  }
+
+
+
+  .button:hover {
+    transform: translate3d(0, 2px, 0);
+  }
+  
+  .button:active {
+    background-color: aquamarine;
+  }
