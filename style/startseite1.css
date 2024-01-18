@@ -1,3 +1,8 @@
+body{
+    margin: 0; 
+    padding: 0
+}
+
 h1 {
     color: #1ab8a6;
     font-size: 60px;
@@ -10,6 +15,7 @@ h1 {
     font-size: min(max(20px, 6vw), 60px);
     margin-bottom: 0%;
     margin-top: 0%;
+    z-index: 2;
 }
 
 h2 {
@@ -53,9 +59,13 @@ h3 {
     position: relative;
 }
 
-
+.bg-1{
+    position: relative;
+    height: 100vh;
+}
 
 .bg-1::before {
+    position: absolute;
     background: url("../image/Startseite_Hintergrund.jpg");
     background-size: cover;
     content: "";
@@ -69,6 +79,7 @@ h3 {
     z-index: -1;
 }
 
+
 .ellipse-1 {
     background: rgba(26, 184, 166, 0.3);
     border-radius: 50%;
@@ -77,13 +88,13 @@ h3 {
     margin-right: 45vw;
     margin-bottom: -50px;
     opacity: 100%;
-    overflow: hidden;
     z-index: -1;
     text-align: center;
     margin-right: 35vw;
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 1;
 }
 
 .ellipse-2 {
@@ -94,13 +105,23 @@ h3 {
     margin-left: 45vw;
     margin-top: -75px;
     opacity: 100%;
-    overflow: hidden;
     z-index: -1;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 1;
 }
+
+.anpassung{
+    padding-top: 20px;
+}
+
+@media (max-width: 1100px) {
+    .anpassung{
+        padding-top: 0px;
+    }
+    }
 
 
 .button {
@@ -109,6 +130,8 @@ h3 {
     padding: 1%;
     border-radius: 10px;
     color: black;
+    position: relative;
+    z-index: 4;
 }
 
 .zitat-container {
