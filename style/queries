@@ -1,0 +1,330 @@
+@media (max-width: 1350px) {
+  .menuealign a{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+ 
+  }
+  
+  .menuealign2 a{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 5%;
+    align-items: end;
+  }
+
+  .menu a{
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 5%;
+  
+  }  
+  
+
+}
+
+@media (max-width: 1075px) {
+  .menuealign a{
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+
+  }
+  
+  .menuealign2 a{
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 5%;
+    align-items: end;
+  }
+  .menu a{
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 5%;
+  
+  } 
+}
+
+@media (max-width: 835px) {
+.menuealign a{
+color: black;
+font-size: 80%;
+font-weight: bold;
+text-decoration: none;
+}
+
+.menuealign2 a{
+color: black;
+font-size: 80%;
+font-weight: bold;
+text-decoration: none;
+margin-left: 5%;
+align-items: end;
+}
+.menu a{
+color: black;
+font-size: 80%;
+font-weight: bold;
+margin-right: 5%;
+
+} 
+}
+
+@media (max-width: 738px) {
+.menuealign a{
+color: black;
+font-size: 70%;
+font-weight: bold;
+text-decoration: none;
+}
+
+.menuealign2 a{
+color: black;
+font-size: 70%;
+font-weight: bold;
+text-decoration: none;
+margin-left: 5%;
+align-items: end;
+}
+.menu a{
+color: black;
+font-size: 70%;
+font-weight: bold;
+margin-right: 5%;
+
+} 
+}
+
+@media (max-width: 690px) {
+.menuealign a{
+color: black;
+font-size: 60%;
+font-weight: bold;
+text-decoration: none;
+}
+
+.menuealign2 a{
+color: black;
+font-size: 60%;
+font-weight: bold;
+text-decoration: none;
+margin-left: 5%;
+align-items: end;
+}
+.menu a{
+color: black;
+font-size: 60%;
+font-weight: bold;
+margin-right: 5%;
+
+} 
+}
+@media (max-width: 590px) {
+.menuealign a{
+color: black;
+font-size: 50%;
+font-weight: bold;
+text-decoration: none;
+}
+
+.menuealign2 a{
+color: black;
+font-size: 50%;
+font-weight: bold;
+text-decoration: none;
+margin-left: 5%;
+align-items: end;
+}
+.menu a{
+color: black;
+font-size: 50%;
+font-weight: bold;
+margin-right: 5%;
+
+} 
+}
+
+@media (max-width: 520px) {
+.menuealign a{
+color: black;
+font-size: 15%;
+font-weight: bold;
+text-decoration: none;
+}
+
+.menuealign2 a{
+color: black;
+font-size: 15%;
+font-weight: bold;
+text-decoration: none;
+margin-left: 5%;
+align-items: end;
+}
+.menu a{
+color: black;
+font-size: 20%;
+font-weight: bold;
+margin-right: 5%;
+
+} 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 2000px) {
+
+  .loginimage{
+    width: 55px;
+    height: 55px;
+}
+}
+
+@media (max-width: 1600px) {
+
+  .menuealign a{
+    font-size: 23px;
+  }
+
+  .loginimage{
+    width: 50px;
+    height: 50px; }
+
+    .menu a{
+      font-size: 18px;
+      margin-left:0%;
+    }
+}
+
+@media (max-width: 1400px) {
+
+  .menuealign a{
+    font-size: 21px;
+  }
+  .loginimage{
+    width: 45px;
+    height: 45px; }
+
+    .menu a{
+      font-size: 17px;
+      margin-left:0%;
+    }
+}
+
+@media (max-width: 1200px) {
+
+  .menuealign a{
+    font-size: 19px;
+  }
+  .loginimage{
+    width: 40px;
+    height: 40px; }
+
+    .menu a{
+      font-size: 16px;
+      margin-left:0%;
+    }
+}
+
+@media (max-width: 1000px) {
+
+  .menuealign a{
+    font-size: 17px;
+  }
+  .loginimage{
+    width: 35px;
+    height: 35px; }
+
+    .menu a{
+      font-size: 15px;
+      margin-left:0%;
+    }
+}
+
+@media (max-width: 800px) {
+
+  .menuealign a{
+    font-size: 14px;
+    padding: 2%;
+  }
+
+  .loginimage{
+    width: 30px;
+    height: 30px; }
+
+    .menu a{
+      font-size: 13px;
+      margin-left:0%;
+      margin-right: 5%;
+    } 
+}
+
+@media (max-width: 600px) {
+
+  .menuealign a{
+    font-size: 11px;
+  }
+
+  .loginimage{
+    width: 25px;
+    height: 25px; }
+
+    .menu a{
+      font-size: 12px;
+      margin-left:0%;
+    } 
+} 
+
+@media (max-width: 500px) {
+
+  .menuealign a{
+    font-size: 10px;
+    padding: 1%;
+  }
+
+  .loginimage{
+    width: 18px;
+    height: 18px; }
+
+    .menu a{
+      font-size: 10px;
+      margin-left:0%;
+      margin-right: 3%;
+    } 
+}
+
+@media (max-width: 400px) {
+
+  .menuealign a{
+    font-size: 9px;
+    padding: 1%;
+  }
+
+  .loginimage{
+    width: 14px;
+    height: 14px; 
+    margin-right: 0%;
+  }
+
+    .menu a{
+      font-size: 8px;
+      margin-left:0%;
+      margin-right: 3%;
+    } 
+}
